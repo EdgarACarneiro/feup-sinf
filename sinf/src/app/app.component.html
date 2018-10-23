@@ -1,5 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/">EdgarACarneiro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <span class="mr-auto"></span>
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/work">Work</a>
+      </div>
+    </div>
+  </nav>
   <h1>
     Welcome to {{ title }}!
   </h1>
