@@ -37,6 +37,10 @@ const routes: Routes = [
     path: 'client/:id',
     component: ClientComponent
   },
+  { // Ver aqui depois se fica assim ou se temos uma 404 page
+    path: '**',
+    redirectTo: '/'
+  }
 ];
 
 @NgModule({
