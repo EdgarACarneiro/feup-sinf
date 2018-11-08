@@ -17,3 +17,14 @@ main {
 .full-height {
     height: 100%;
 }
+
+.dash-link {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding-left: 3em;
+    
+    @media (max-width: 1000px) {
+        padding-left: 0.5em;
+    }
+}
