@@ -1,17 +1,30 @@
-$strong-red: #b51513;
-$light-red: #f6535b;
+$strong-red: #d0181a;
+$light-red: #fa3f4a;
 
 main {
   height: 100%;
   background: linear-gradient($light-red, $strong-red);
 }
 
+.header {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
 .title {
-    border-bottom: 3px solid #f44750;
+    font-size: 18px;
+    font-weight: 400;
+    margin: auto 0;
 }
 
 .my-nav {
-    border-bottom: 3px solid #ececed;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.side-bar {
+    width: 260px !important;
+    max-width: 260px !important;
+    min-width: 260px !important;
 }
 
 .full-height {
