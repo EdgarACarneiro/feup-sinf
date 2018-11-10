@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col side-bar d-flex justify-content-center header">
       <img src="assets/img/logo.png" width="35" height="35">
-      <h4 class="font-white title pl-1">
+      <h4 class="font-white title pl-2">
         MANGO
       </h4>
     </div>
@@ -11,27 +11,33 @@
     </div>
   </div>
   <div class="row full-height">
-    <div class="col side-bar font-white">
-      <button routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="btn my-1 py-3 dash-link text-left">
+    <div class="col side-bar font-white mt-4">
+
+      <button routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="btn dash-link text-left">
         <i class="fas fa-chart-pie"></i>
         <span class="pl-3">OVERVIEW</span>
       </button>
-      <button routerLink="./sales" routerLinkActive="active" class="btn my-1 py-3 dash-link text-left">
+
+      <button routerLink="./sales" routerLinkActive="active" class="btn dash-link text-left">
         <i class="fas fa-shopping-cart"></i>
         <span class="pl-3">SALES</span>
       </button>
-      <button routerLink="./financial" routerLinkActive="active" class="btn my-1 py-3 dash-link text-left">
+      
+      <button routerLink="./financial" routerLinkActive="active" class="btn dash-link text-left">
         <i class="far fa-money-bill-alt"></i>
         <span class="pl-3">FINANCIAL</span>
       </button>
-      <button routerLink="./procurement" routerLinkActive="active" class="btn my-1 py-3 dash-link text-left">
+      
+      <button routerLink="./procurement" routerLinkActive="active" class="btn dash-link text-left">
         <i class="fas fa-notes-medical"></i>
         <span class="pl-3">PROCUREMENT</span>
       </button>
-      <button routerLink="./inventory" routerLinkActive="active" class="btn my-1 py-3 dash-link text-left">
+      
+      <button routerLink="./inventory" routerLinkActive="active" class="btn dash-link text-left">
         <i class="fas fa-box-open"></i>
         <span class="pl-3">INVENTORY</span>
       </button>
+    
     </div>
     <div class="col white full-height">
       <router-outlet></router-outlet>

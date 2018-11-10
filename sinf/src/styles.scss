@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     overflow-y: hidden;
+    font-family: Roboto,"Helvetica Neue",Arial,sans-serif !important;
 }
 
 .font-white {
@@ -14,4 +15,9 @@ html, body {
 
 .row {
     margin: 0 !important;
+}
+
+i {
+    font-size: 20px;
+    width: 30px !important;
 }

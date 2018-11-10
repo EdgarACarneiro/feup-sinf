@@ -9,10 +9,11 @@ main {
 .header {
     padding: 10px 15px;
     border-bottom: 1px solid rgba(255,255,255,.2);
+    padding-right: 80px;
 }
 
 .title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     margin: auto 0;
 }
@@ -32,13 +33,21 @@ main {
 }
 
 .dash-link {
-    width: 100%;
+    width: calc(100% - 10px);
     background-color: inherit;
     color: white;
-    padding-left: 3em;
+    margin: 5px 5px;
+    padding: 12px 15px;
+    font-size: 12px;
+    font-weight: 600;
     
-    @media (max-width: 1000px) {
-        padding-left: 0.5em;
+    &:hover {
+        background: rgba(255,255,255,.13);
+        opacity: 1;
+    }
+
+    .active {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 }
 
