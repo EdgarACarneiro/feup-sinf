@@ -46,11 +46,7 @@ main {
         opacity: 1;
     }
 
-    .active {
+    &.active {
         background-color: rgba(255, 255, 255, 0.2);
     }
-}
-
-.dash-link.active {
-    background-color: rgba(255, 255, 255, 0.2);
 }
