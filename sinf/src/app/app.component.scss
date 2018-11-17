@@ -1,5 +1,6 @@
 $strong-red: #BB0502;
 $light-red: #FB404B;
+$light-grey: #777777;
 
 main {
     height: 100%;
@@ -9,7 +10,6 @@ main {
 .header {
     padding: 10px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
-    padding-right: 80px;
 }
 
 .title {
@@ -19,8 +19,15 @@ main {
     margin: auto 0;
 }
 
+.subtitle {
+    color: $light-grey;
+    font-size: 20px;
+    margin: auto 0;
+}
+
 .my-nav {
     border-bottom: 1px solid #e7e7e7;
+    background-color: white;
 }
 
 .side-bar {
@@ -31,6 +38,10 @@ main {
 
 .full-height {
     height: 100%;
+    i {
+        font-size: 20px;
+        width: 30px !important;
+    }
 }
 
 .dash-link {

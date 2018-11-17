@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+$strong-red: #BB0502;
+$light-red: #FB404B;
+
 html,
 body {
     height: 100%;
@@ -11,15 +14,20 @@ body {
     color: white !important;
 }
 
-.white {
-    background: white;
+.grey {
+    background-color: rgb(247, 247, 247);
 }
 
 .row {
     margin: 0 !important;
 }
 
-i {
-    font-size: 20px;
-    width: 30px !important;
+.btn-primary {
+    font-size: 14px;
+    background-color: $light-red;
+    border-color: $light-red;
+    &:hover {
+        background-color: $strong-red;
+        border-color: $strong-red;
+    }
 }
