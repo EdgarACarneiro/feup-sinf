@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+
+  server:
+    image: server
+    build:
+      context: ./server
+      target: build-stage
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    container_name: server
+    ports:
+      - '3000:3000'
+    links:
+      - mongo:mongo
+    depends_on:
+      - mongo
+ 
+  mongo:
+   image: mongo:4.0.1
+   container_name: mongo
+   ports:
+     - "27017:27017"
+   volumes:
+     # - ./docker/data/mongo:/data/db
