@@ -10,6 +10,7 @@ import { InventoryComponent } from './inventory/pages/inventory/inventory.compon
 import { SalesComponent } from './sales/pages/sales/sales.component';
 import { ProcurementComponent } from './procurement/pages/procurement/procurement.component';
 import { ProductComponent } from './product/pages/product/product.component';
+import { LoginComponent } from './user/pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProductComponent } from './product/pages/product/product.component';
     InventoryComponent,
     SalesComponent,
     ProcurementComponent,
-    ProductComponent
+    ProductComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
