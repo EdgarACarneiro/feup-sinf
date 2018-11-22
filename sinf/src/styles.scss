@@ -1,33 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
+// VARIABLES //
 $strong-red: #BB0502;
 $light-red: #FB404B;
+$light-grey: #777777;
+
+
+// STYLES //
 
 html,
 body {
     height: 100%;
     overflow-y: hidden;
     font-family: Roboto, "Helvetica Neue", Arial, sans-serif !important;
-}
-
-.font-white {
-    color: white !important;
-}
-
-.grey {
-    background-color: rgb(247, 247, 247);
-}
-
-.row {
-    margin: 0 !important;
-}
-
-.btn-primary {
-    font-size: 14px;
-    background-color: $light-red;
-    border-color: $light-red;
-    &:hover {
-        background-color: $strong-red;
-        border-color: $strong-red;
-    }
 }

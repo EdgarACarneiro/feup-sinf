@@ -1,6 +1,4 @@
-$strong-red: #BB0502;
-$light-red: #FB404B;
-$light-grey: #777777;
+@import '~src/styles';
 
 main {
     height: 100%;
@@ -58,5 +56,27 @@ main {
     }
     &.active {
         background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.font-white {
+    color: white !important;
+}
+
+.grey {
+    background-color: rgb(247, 247, 247);
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.btn-primary {
+    font-size: 14px;
+    background-color: $light-red;
+    border-color: $light-red;
+    &:hover {
+        background-color: $strong-red;
+        border-color: $strong-red;
     }
 }
