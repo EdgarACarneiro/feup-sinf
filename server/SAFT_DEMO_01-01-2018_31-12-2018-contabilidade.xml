@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<AuditFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:OECD:StandardAuditFile-Tax:PT_1.04_01 ../schemas/SAF-T.xsd" xmlns="urn:OECD:StandardAuditFile-Tax:PT_1.04_01">
+  <Header>
+    <AuditFileVersion>1.04_01</AuditFileVersion>
+    <CompanyID>503140600</CompanyID>
+    <TaxRegistrationNumber>503140600</TaxRegistrationNumber>
+    <TaxAccountingBasis>C</TaxAccountingBasis>
+    <CompanyName>Empresa de demonstração (PRIVA)</CompanyName>
+    <CompanyAddress>
+      <StreetName>Rua Dr Roberto Frias</StreetName>
+      <AddressDetail>Rua Dr Roberto Frias</AddressDetail>
+      <City>Ermesinde</City>
+      <PostalCode>4445-415</PostalCode>
+      <Country>PT</Country>
+    </CompanyAddress>
+    <FiscalYear>2018</FiscalYear>
+    <StartDate>2018-01-01</StartDate>
+    <EndDate>2018-12-31</EndDate>
+    <CurrencyCode>EUR</CurrencyCode>
+    <DateCreated>2018-11-21</DateCreated>
+    <TaxEntity>Sede</TaxEntity>
+    <ProductCompanyTaxID>503140600</ProductCompanyTaxID>
+    <SoftwareCertificateNumber>0030</SoftwareCertificateNumber>
+    <ProductID>ERP v750/PRIMAVERA Business Software Solutions</ProductID>
+    <ProductVersion>10.0002.1014</ProductVersion>
+  </Header>
+  <MasterFiles>
+    <Customer>
+      <CustomerID>Consumidor final</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>999999990</CustomerTaxID>
+      <CompanyName>Consumidor final</CompanyName>
+      <BillingAddress>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Country>Desconhecido</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>Desconhecido</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>Desconhecido</PostalCode>
+        <Country>Desconhecido</Country>
+      </ShipToAddress>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>ES989922456_C</CustomerID>
+      <AccountID>21123004</AccountID>
+      <CustomerTaxID>989922456</CustomerTaxID>
+      <CompanyName>Soluciones Cad de Madrid, SA</CompanyName>
+      <BillingAddress>
+        <AddressDetail>PASSEO DE PORTUGAL, 464646</AddressDetail>
+        <City>VILANUEVA DE ARRIBA</City>
+        <PostalCode>61001</PostalCode>
+        <Country>ES</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>PASSEO DE PORTUGAL, 464646</AddressDetail>
+        <City>VILANUEVA DE ARRIBA</City>
+        <PostalCode>61001</PostalCode>
+        <Country>ES</Country>
+      </ShipToAddress>
+      <Telephone>00.034.1.474747447</Telephone>
+      <Fax>00.034.1.4374747474</Fax>
+      <Website>http://alcad.es</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>AO823892388_C</CustomerID>
+      <AccountID>21113001</AccountID>
+      <CustomerTaxID>823892388</CustomerTaxID>
+      <CompanyName>Inforshow, Informática Comunicação</CompanyName>
+      <BillingAddress>
+        <AddressDetail>Av. dos Coqueiros, 464646</AddressDetail>
+        <City>Luanda</City>
+        <PostalCode>0000</PostalCode>
+        <Country>AO</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>Av. dos Coqueiros, 464646</AddressDetail>
+        <City>Luanda</City>
+        <PostalCode>0000</PostalCode>
+        <Country>AO</Country>
+      </ShipToAddress>
+      <Telephone>00.66.9237293377</Telephone>
+      <Fax>00.66.464464646</Fax>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>PT505678900_C</CustomerID>
+      <AccountID>21111003</AccountID>
+      <CustomerTaxID>505678900</CustomerTaxID>
+      <CompanyName>José Maria Fernandes &amp; Filhos, Lda.</CompanyName>
+      <BillingAddress>
+        <AddressDetail>Av. do Norte, 484848</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>4100</PostalCode>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>Av. do Norte, 484848</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>4100</PostalCode>
+        <Country>PT</Country>
+      </ShipToAddress>
+      <Telephone>02.24949  49499</Telephone>
+      <Fax>2.2498448499</Fax>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>GB9393878719-A_C</CustomerID>
+      <AccountID>21113002</AccountID>
+      <CustomerTaxID>9393878719-A</CustomerTaxID>
+      <CompanyName>MicroAvi, Inc.</CompanyName>
+      <BillingAddress>
+        <AddressDetail>34, ROYAL AVENUE</AddressDetail>
+        <City>CHELSEA</City>
+        <PostalCode>87999</PostalCode>
+        <Country>GB</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>34, ROYAL AVENUE</AddressDetail>
+        <City>CHELSEA</City>
+        <PostalCode>87999</PostalCode>
+        <Country>GB</Country>
+      </ShipToAddress>
+      <Telephone>00.78.3883383838</Telephone>
+      <Fax>00.78.383838112</Fax>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Customer>
+      <CustomerID>PT123456789_C</CustomerID>
+      <AccountID>21111001</AccountID>
+      <CustomerTaxID>123456789</CustomerTaxID>
+      <CompanyName>Sofrio, Lda</CompanyName>
+      <BillingAddress>
+        <AddressDetail>AV. DO ETERNO GELO, 88888</AddressDetail>
+        <City>POLO  NORTE</City>
+        <PostalCode>1000</PostalCode>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipToAddress>
+        <AddressDetail>AV. DO ETERNO GELO, 88888</AddressDetail>
+        <City>POLO  NORTE</City>
+        <PostalCode>1000</PostalCode>
+        <Country>PT</Country>
+      </ShipToAddress>
+      <Telephone>200267890</Telephone>
+      <Fax>200267899</Fax>
+      <Website>http://www.sofrio.com</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Customer>
+    <Supplier>
+      <SupplierID>503144703_F</SupplierID>
+      <AccountID>22111001</AccountID>
+      <SupplierTaxID>503144703</SupplierTaxID>
+      <CompanyName>Sociedade de Fornecimentos, Lda.</CompanyName>
+      <BillingAddress>
+        <AddressDetail>Av. do Sul, 387383</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1000-001</PostalCode>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipFromAddress>
+        <AddressDetail>Av. do Sul, 387383</AddressDetail>
+        <City>Lisboa</City>
+        <PostalCode>1000-001</PostalCode>
+        <Country>PT</Country>
+      </ShipFromAddress>
+      <Telephone>21383833838</Telephone>
+      <Fax>21383833838</Fax>
+      <Website>http://socfornecimento.pt</Website>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Supplier>
+    <Supplier>
+      <SupplierID>583140688_F</SupplierID>
+      <AccountID>22111002</AccountID>
+      <SupplierTaxID>583140688</SupplierTaxID>
+      <CompanyName>Publicidade &amp; Marrketing</CompanyName>
+      <BillingAddress>
+        <AddressDetail>Av. das Inovações, 4654765</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>4000</PostalCode>
+        <Country>PT</Country>
+      </BillingAddress>
+      <ShipFromAddress>
+        <AddressDetail>Av. das Inovações, 4654765</AddressDetail>
+        <City>Desconhecido</City>
+        <PostalCode>4000</PostalCode>
+        <Country>PT</Country>
+      </ShipFromAddress>
+      <Telephone>22 384844848</Telephone>
+      <Fax>22 484484848</Fax>
+      <SelfBillingIndicator>0</SelfBillingIndicator>
+    </Supplier>
+    <TaxTable>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isenta</Description>
+        <TaxPercentage>0.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>4.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Reduzida</Description>
+        <TaxPercentage>5.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>8.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>9.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Intermédia</Description>
+        <TaxPercentage>12.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>14.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>15.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Normal</Description>
+        <TaxPercentage>20.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Normal</Description>
+        <TaxPercentage>21.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Normal</Description>
+        <TaxPercentage>23.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>OUT</TaxCode>
+        <Description>Outras</Description>
+        <TaxPercentage>23.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isenta</Description>
+        <TaxPercentage>0.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Reduzida</Description>
+        <TaxPercentage>4.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Intermédia</Description>
+        <TaxPercentage>9.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-AC</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Normal</Description>
+        <TaxPercentage>16.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isenta</Description>
+        <TaxPercentage>0.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>RED</TaxCode>
+        <Description>Reduzida</Description>
+        <TaxPercentage>5.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>INT</TaxCode>
+        <Description>Intermédia</Description>
+        <TaxPercentage>12.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT-MA</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>Normal</Description>
+        <TaxPercentage>22.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>IS</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>ISE</TaxCode>
+        <Description>Isento</Description>
+        <TaxPercentage>0.00</TaxPercentage>
+      </TaxTableEntry>
+    </TaxTable>
+  </MasterFiles>
+  <GeneralLedgerEntries>
+    <NumberOfEntries>26</NumberOfEntries>
+    <TotalDebit>65226.91</TotalDebit>
+    <TotalCredit>66226.91</TotalCredit>
+    <Journal>
+      <JournalID>00021</JournalID>
+      <Description>Caixa A</Description>
+      <Transaction>
+        <TransactionID>2018-01-31 00021 10001</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-31</TransactionDate>
+        <SourceID>miguel.cordeiro</SourceID>
+        <Description>Caixa A - Pagamentos</Description>
+        <DocArchivalNumber>10001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>111</AccountID>
+            <SourceDocumentID>211 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Caixa A - Pagamentos</Description>
+            <CreditAmount>560.00</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>6221222</AccountID>
+            <SourceDocumentID>211 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Caixa A - Pagamentos</Description>
+            <DebitAmount>560.00</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00031</JournalID>
+      <Description>Bancos - Depósitos</Description>
+      <Transaction>
+        <TransactionID>2018-01-16 00031 10002</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-16</TransactionDate>
+        <SourceID>eugenio.veiga</SourceID>
+        <Description>RE N.º2/2</Description>
+        <DocArchivalNumber>10002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>112</AccountID>
+            <SourceDocumentID>RE 2/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 5/A</Description>
+            <DebitAmount>352.10</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>RE 2/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 5/A</Description>
+            <CreditAmount>352.10</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-30 00031 10001</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-30</TransactionDate>
+        <SourceID>eugenio.veiga</SourceID>
+        <Description>RE N.º1/2</Description>
+        <DocArchivalNumber>10001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>112</AccountID>
+            <SourceDocumentID>RE 2/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 4/A</Description>
+            <DebitAmount>850.57</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>RE 2/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 4/A</Description>
+            <CreditAmount>850.57</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-03-25 00031 30001</TransactionID>
+        <Period>3</Period>
+        <TransactionDate>2018-03-25</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>RE N.º6/A</Description>
+        <DocArchivalNumber>30001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>112</AccountID>
+            <SourceDocumentID>RE A/6</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 6/A</Description>
+            <DebitAmount>123.42</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>RE A/6</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>RE Nº 6/A</Description>
+            <CreditAmount>123.42</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-06-12 00031 60002</TransactionID>
+        <Period>6</Period>
+        <TransactionDate>2018-06-12</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>MOV N.º21/2</Description>
+        <DocArchivalNumber>60002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>1201</AccountID>
+            <SourceDocumentID>MOV 2/21</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>MOV Nº 40/A</Description>
+            <CreditAmount>1000.00</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00032</JournalID>
+      <Description>Bancos - Pagamentos</Description>
+    </Journal>
+    <Journal>
+      <JournalID>00041</JournalID>
+      <Description>Compras - MN</Description>
+      <Transaction>
+        <TransactionID>2018-01-29 00041 10002</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-29</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>VFA N.º9/A</Description>
+        <DocArchivalNumber>10002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111002</AccountID>
+            <SourceDocumentID>VFA A/9</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 9/A</Description>
+            <CreditAmount>6693.81</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFA A/9</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 9/A</Description>
+            <DebitAmount>252.00</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFA A/9</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 9/A</Description>
+            <DebitAmount>909.75</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>4</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA A/9</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 9/A</Description>
+            <DebitAmount>1200.00</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>5</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA A/9</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 9/A</Description>
+            <DebitAmount>4332.06</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-30 00041 10003</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-30</TransactionDate>
+        <SourceID>Administrador</SourceID>
+        <Description>VFA N.º3/A</Description>
+        <DocArchivalNumber>10003</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VFA A/3</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 10/A</Description>
+            <CreditAmount>10324.67</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFA A/3</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 10/A</Description>
+            <DebitAmount>1791.97</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA A/3</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 10/A</Description>
+            <DebitAmount>8532.70</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-02-22 00041 20001</TransactionID>
+        <Period>2</Period>
+        <TransactionDate>2018-02-22</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>VFP N.º1/A</Description>
+        <DocArchivalNumber>20001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VFP A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 1/A</Description>
+            <CreditAmount>4613.58</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFP A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 1/A</Description>
+            <DebitAmount>800.70</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>31611</AccountID>
+            <SourceDocumentID>VFP A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 1/A</Description>
+            <DebitAmount>3812.88</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>4</RecordID>
+            <AccountID>31961</AccountID>
+            <SourceDocumentID>VFP A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 1/A</Description>
+            <CreditAmount>3812.88</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>5</RecordID>
+            <AccountID>3612</AccountID>
+            <SourceDocumentID>VFP A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 1/A</Description>
+            <DebitAmount>3812.88</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-04-24 00041 40001</TransactionID>
+        <Period>4</Period>
+        <TransactionDate>2018-04-24</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>VFA N.º6/2</Description>
+        <DocArchivalNumber>40001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VFA 2/6</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 13/A</Description>
+            <CreditAmount>523.02</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFA 2/6</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 13/A</Description>
+            <DebitAmount>90.77</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA 2/6</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 13/A</Description>
+            <DebitAmount>432.25</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-04-30 00041 40002</TransactionID>
+        <Period>4</Period>
+        <TransactionDate>2018-04-30</TransactionDate>
+        <SourceID>Administrador</SourceID>
+        <Description>VNC N.º2/A</Description>
+        <DocArchivalNumber>40002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VNC A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>+VNC Nº 2/A+</Description>
+            <DebitAmount>523.02</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VNC A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>+VNC Nº 2/A+</Description>
+            <CreditAmount>90.77</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VNC A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>+VNC Nº 2/A+</Description>
+            <CreditAmount>432.25</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-05-22 00041 50001</TransactionID>
+        <Period>5</Period>
+        <TransactionDate>2018-05-22</TransactionDate>
+        <SourceID>Administrador</SourceID>
+        <Description>VFA N.º14/A</Description>
+        <DocArchivalNumber>50001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFA A/14</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 14/A</Description>
+            <DebitAmount>764.40</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA A/14</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 14/A</Description>
+            <DebitAmount>3640.00</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VFA A/14</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 14/A</Description>
+            <CreditAmount>4404.40</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-06-27 00041 60001</TransactionID>
+        <Period>6</Period>
+        <TransactionDate>2018-06-27</TransactionDate>
+        <SourceID>Administrador</SourceID>
+        <Description>VFA N.º15/A</Description>
+        <DocArchivalNumber>60001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>24321132011</AccountID>
+            <SourceDocumentID>VFA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 15/A</Description>
+            <DebitAmount>29.93</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>3121</AccountID>
+            <SourceDocumentID>VFA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 15/A</Description>
+            <DebitAmount>149.64</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>22111001</AccountID>
+            <SourceDocumentID>VFA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFA Nº 15/A</Description>
+            <CreditAmount>179.57</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-11-23 00041 110001</TransactionID>
+        <Period>11</Period>
+        <TransactionDate>2018-11-23</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>VFP N.º2/A</Description>
+        <DocArchivalNumber>110001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>22111005</AccountID>
+            <SourceDocumentID>VFP A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 2/A</Description>
+            <CreditAmount>37.75</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>VFP A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 2/A</Description>
+            <DebitAmount>6.55</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>31611</AccountID>
+            <SourceDocumentID>VFP A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 2/A</Description>
+            <DebitAmount>31.20</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>4</RecordID>
+            <AccountID>31961</AccountID>
+            <SourceDocumentID>VFP A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 2/A</Description>
+            <CreditAmount>31.20</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>5</RecordID>
+            <AccountID>3612</AccountID>
+            <SourceDocumentID>VFP A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VFP Nº 2/A</Description>
+            <DebitAmount>31.20</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00051</JournalID>
+      <Description>Vendas - Crédito - MN</Description>
+      <Transaction>
+        <TransactionID>2018-01-19 00051 10001</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-19</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º15/A</Description>
+        <DocArchivalNumber>10001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21123004</AccountID>
+            <SourceDocumentID>FA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 15/A</Description>
+            <DebitAmount>13016.00</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 15/A</Description>
+            <CreditAmount>2259.00</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/15</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 15/A</Description>
+            <CreditAmount>10757.00</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-20 00051 10002</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-20</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º16/A</Description>
+        <DocArchivalNumber>10002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>FA A/16</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 16/A</Description>
+            <DebitAmount>603.79</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/16</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 16/A</Description>
+            <CreditAmount>104.79</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/16</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 16/A</Description>
+            <CreditAmount>499.00</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-25 00051 10003</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-25</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º17/A</Description>
+        <DocArchivalNumber>10003</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21111003</AccountID>
+            <SourceDocumentID>FA A/17</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 17/A</Description>
+            <DebitAmount>2511.98</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/17</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 17/A</Description>
+            <CreditAmount>435.98</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/17</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 17/A</Description>
+            <CreditAmount>2076.00</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-30 00051 10004</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-30</TransactionDate>
+        <SourceID>teste</SourceID>
+        <Description>FA N.º18/A</Description>
+        <DocArchivalNumber>10004</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>FA A/18</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 18/A</Description>
+            <DebitAmount>3480.67</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331213211</AccountID>
+            <SourceDocumentID>FA A/18</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 18/A</Description>
+            <CreditAmount>50.94</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/18</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 18/A</Description>
+            <CreditAmount>553.14</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>4</RecordID>
+            <AccountID>7211</AccountID>
+            <SourceDocumentID>FA A/18</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 18/A</Description>
+            <CreditAmount>242.59</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>5</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/18</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 18/A</Description>
+            <CreditAmount>2634.00</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-02-10 00051 20001</TransactionID>
+        <Period>2</Period>
+        <TransactionDate>2018-02-10</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º19/A</Description>
+        <DocArchivalNumber>20001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21113006</AccountID>
+            <SourceDocumentID>FA A/19</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 19/A</Description>
+            <DebitAmount>2837.40</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/19</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 19/A</Description>
+            <CreditAmount>492.44</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/19</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 19/A</Description>
+            <CreditAmount>2344.96</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-02-24 00051 20002</TransactionID>
+        <Period>2</Period>
+        <TransactionDate>2018-02-24</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º20/A</Description>
+        <DocArchivalNumber>20002</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <CustomerID>Consumidor final</CustomerID>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21113001</AccountID>
+            <SourceDocumentID>FA A/20</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 20/A</Description>
+            <DebitAmount>1781.70</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331213211</AccountID>
+            <SourceDocumentID>FA A/20</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 20/A</Description>
+            <CreditAmount>63.00</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/20</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 20/A</Description>
+            <CreditAmount>246.22</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>4</RecordID>
+            <AccountID>7211</AccountID>
+            <SourceDocumentID>FA A/20</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 20/A</Description>
+            <CreditAmount>300.00</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>5</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/20</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 20/A</Description>
+            <CreditAmount>1172.48</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-03-10 00051 30001</TransactionID>
+        <Period>3</Period>
+        <TransactionDate>2018-03-10</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>FA N.º21/A</Description>
+        <DocArchivalNumber>30001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>21111001</AccountID>
+            <SourceDocumentID>FA A/21</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 21/A</Description>
+            <DebitAmount>2175.66</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>FA A/21</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 21/A</Description>
+            <CreditAmount>377.59</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/21</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 21/A</Description>
+            <CreditAmount>1798.07</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-04-30 00051 40001</TransactionID>
+        <Period>4</Period>
+        <TransactionDate>2018-04-30</TransactionDate>
+        <SourceID>Administrador</SourceID>
+        <Description>FA N.º22/A</Description>
+        <DocArchivalNumber>40001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>FA A/22</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 22/A</Description>
+            <CreditAmount>474.12</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>21113006</AccountID>
+            <SourceDocumentID>FA A/22</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 22/A</Description>
+            <DebitAmount>575.46</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>24331113201</AccountID>
+            <SourceDocumentID>FA A/22</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>FA Nº 22/A</Description>
+            <CreditAmount>101.34</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00056</JournalID>
+      <Description>Vendas - Dinheiro - MN</Description>
+      <Transaction>
+        <TransactionID>2018-01-04 00056 10001</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-04</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>VD N.º1/A</Description>
+        <DocArchivalNumber>10001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <CustomerID>Consumidor final</CustomerID>
+        <Lines>
+          <DebitLine>
+            <RecordID>1</RecordID>
+            <AccountID>112</AccountID>
+            <SourceDocumentID>VD A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VD Nº 1/A</Description>
+            <DebitAmount>371.28</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>2</RecordID>
+            <AccountID>7111</AccountID>
+            <SourceDocumentID>VD A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VD Nº 1/A</Description>
+            <CreditAmount>306.84</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>3</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>VD A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>VD Nº 1/A</Description>
+            <CreditAmount>64.44</CreditAmount>
+          </CreditLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00062</JournalID>
+      <Description>Apuramento IVA</Description>
+      <Transaction>
+        <TransactionID>2018-01-31 00062 10001</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-31</TransactionDate>
+        <SourceID>MIGUEL.CORDEIRO</SourceID>
+        <Description>Apur. IVA - Janeiro</Description>
+        <DocArchivalNumber>10001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>24321132111</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <CreditAmount>1791.97</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>2435</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <DebitAmount>1791.97</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>3</RecordID>
+            <AccountID>24331113211</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <DebitAmount>64.44</DebitAmount>
+          </DebitLine>
+          <CreditLine>
+            <RecordID>4</RecordID>
+            <AccountID>2435</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <CreditAmount>64.44</CreditAmount>
+          </CreditLine>
+          <CreditLine>
+            <RecordID>5</RecordID>
+            <AccountID>2435</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <CreditAmount>1727.53</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>6</RecordID>
+            <AccountID>2438</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <DebitAmount>1000.00</DebitAmount>
+          </DebitLine>
+          <DebitLine>
+            <RecordID>7</RecordID>
+            <AccountID>2437</AccountID>
+            <SourceDocumentID>621 2009/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>Apur. IVA - Janeiro</Description>
+            <DebitAmount>727.53</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+    <Journal>
+      <JournalID>00092</JournalID>
+      <Description>Ordens de Produção</Description>
+      <Transaction>
+        <TransactionID>2018-01-22 00092 10004</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-22</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>SOF N.º1/A</Description>
+        <DocArchivalNumber>10004</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>3612</AccountID>
+            <SourceDocumentID>SOF A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 1/A</Description>
+            <CreditAmount>596.96</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>61611</AccountID>
+            <SourceDocumentID>SOF A/1</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 1/A</Description>
+            <DebitAmount>596.96</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-01-25 00092 10005</TransactionID>
+        <Period>1</Period>
+        <TransactionDate>2018-01-25</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>SOF N.º2/A</Description>
+        <DocArchivalNumber>10005</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>3612</AccountID>
+            <SourceDocumentID>SOF A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 2/A</Description>
+            <CreditAmount>431.68</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>61611</AccountID>
+            <SourceDocumentID>SOF A/2</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 2/A</Description>
+            <DebitAmount>431.68</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+      <Transaction>
+        <TransactionID>2018-02-12 00092 20001</TransactionID>
+        <Period>2</Period>
+        <TransactionDate>2018-02-12</TransactionDate>
+        <SourceID>lucia.ribeiro</SourceID>
+        <Description>SOF N.º3/A</Description>
+        <DocArchivalNumber>20001</DocArchivalNumber>
+        <TransactionType>N</TransactionType>
+        <GLPostingDate>2018-10-17</GLPostingDate>
+        <Lines>
+          <CreditLine>
+            <RecordID>1</RecordID>
+            <AccountID>3612</AccountID>
+            <SourceDocumentID>SOF A/3</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 3/A</Description>
+            <CreditAmount>230.40</CreditAmount>
+          </CreditLine>
+          <DebitLine>
+            <RecordID>2</RecordID>
+            <AccountID>61611</AccountID>
+            <SourceDocumentID>SOF A/3</SourceDocumentID>
+            <SystemEntryDate>2018-10-17T16:48:23</SystemEntryDate>
+            <Description>SOF Nº 3/A</Description>
+            <DebitAmount>230.40</DebitAmount>
+          </DebitLine>
+        </Lines>
+      </Transaction>
+    </Journal>
+  </GeneralLedgerEntries>
+</AuditFile>
