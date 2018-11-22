@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-
 // VARIABLES //
+$theme-colors: (
+  "primary":    #BB0502,
+  "secondary":  #BB0502
+);
+
 $strong-red: #BB0502;
 $light-red: #FB404B;
 $light-grey: #777777;
@@ -13,4 +17,17 @@ body {
     height: 100%;
     overflow-y: hidden;
     font-family: $font-family-base;
+}
+
+.btn-primary {
+    background-color: $light-red;
+    border-color: $light-red;
+    &:hover,
+    &:active {
+        background-color: $strong-red!important;
+        border-color: $strong-red !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
 }
