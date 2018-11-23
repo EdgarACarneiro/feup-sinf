@@ -4,12 +4,8 @@
 */
 
 .navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    background: white !important;
+    margin-bottom: 1.3em;
     border-bottom: 1px solid #e7e7e7;
     h4 {
         color: $medium-grey;
@@ -89,9 +85,9 @@
 
 #content {
     width: 100%;
-    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    background-color: rgb(247, 247, 249);
 }
 
 /*

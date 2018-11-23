@@ -1,16 +1,18 @@
 /*
 * VARIABLES
 */
+
 $strong-red: #BB0502;
 $light-red: #FB404B;
 $medium-grey: #777777;
-$light-grey: rgba(203,203,210,.15);
+$light-grey: rgba(203, 203, 210, .15);
 $font-family-heading: 'Montserrat', sans-serif;
 $font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
 
 /*
 * GLOBAL STYLES
 */
+
 html,
 body {
     height: 100%;
@@ -18,12 +20,16 @@ body {
     font-family: $font-family-base;
 }
 
+.container-fluid {
+    padding: 0 1.8em;
+}
+
 .btn-primary {
     background-color: $light-red;
     border-color: $light-red;
     &:hover,
     &:active {
-        background-color: $strong-red!important;
+        background-color: $strong-red !important;
         border-color: $strong-red !important;
     }
     &:focus {
@@ -37,7 +43,7 @@ body {
     border: none;
     &:hover,
     &:active {
-        background-color: $light-grey!important;
+        background-color: $light-grey !important;
     }
     &:focus {
         box-shadow: none !important;
