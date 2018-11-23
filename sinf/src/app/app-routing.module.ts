@@ -7,6 +7,7 @@ import { OverviewComponent } from './overview/pages/overview/overview.component'
 import { InventoryComponent } from './inventory/pages/inventory/inventory.component';
 import { ProductComponent } from './product/pages/product/product.component';
 import { ClientComponent } from './client/pages/client/client.component';
+import { LoginComponent } from './user/pages/login/login.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'client/:id',
     component: ClientComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
   { // Ver aqui depois se fica assim ou se temos uma 404 page
     path: '**',
