@@ -12,16 +12,15 @@
         font-size: 1.2em;
         margin: auto 3em auto 1em;
     }
-    #sidebarCollapse {
+    .btn-light {
         font-size: 1.5em;
     }
-    .nav-button {
-        font-size: 1.2em;
-        .text {
-            padding-left: 0.5em;
+    .navbar-nav {
+        li:first-child {
+            margin-right: 2em;
         }
     }
-    .pivot {
+    .btn-primary {
         font-size: 0.8em;
         span {
             font-size: 1.3em;
@@ -99,15 +98,10 @@
         h4 {
             display: none;
         }
-        .pivot {
-            margin: auto 1em;
-        }
-        .nav-button {
-            .lnr {
-                font-size: 1.3em;
-            }
-            .text {
-                display: none;
+        .navbar-nav {
+            li:first-child {
+                margin-right: 0;
+                margin-bottom: 1em;
             }
         }
     }
