@@ -1,11 +1,16 @@
-// VARIABLES //
+/*
+* VARIABLES
+*/
 $strong-red: #BB0502;
 $light-red: #FB404B;
-$light-grey: #777777;
+$medium-grey: #777777;
+$light-grey: rgba(203,203,210,.15);
 $font-family-heading: 'Montserrat', sans-serif;
 $font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
 
-// STYLES //
+/*
+* GLOBAL STYLES
+*/
 html,
 body {
     height: 100%;
@@ -20,6 +25,19 @@ body {
     &:active {
         background-color: $strong-red!important;
         border-color: $strong-red !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.btn-light {
+    background-color: transparent;
+    color: $medium-grey;
+    border: none;
+    &:hover,
+    &:active {
+        background-color: $light-grey!important;
     }
     &:focus {
         box-shadow: none !important;
