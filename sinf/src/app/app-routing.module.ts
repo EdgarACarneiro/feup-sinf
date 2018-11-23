@@ -8,35 +8,42 @@ import { InventoryComponent } from './inventory/pages/inventory/inventory.compon
 import { ProductComponent } from './product/pages/product/product.component';
 import { ClientComponent } from './client/pages/client/client.component';
 import { LoginComponent } from './user/pages/login/login.component';
+import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: OverviewComponent
-  },
-  {
-    path: 'financial',
-    component: FinancialComponent
-  },
-  {
-    path: 'sales',
-    component: SalesComponent
-  },
-  {
-    path: 'procurement',
-    component: ProcurementComponent
-  },
-  {
-    path: 'inventory',
-    component: InventoryComponent
-  },
-  {
-    path: 'product/:id',
-    component: ProductComponent
-  },
-  {
-    path: 'client/:id',
-    component: ClientComponent
+    component: DashboardComponent,
+    children: [
+      {
+        path: '',
+        component: OverviewComponent
+      },
+      {
+        path: 'financial',
+        component: FinancialComponent
+      },
+      {
+        path: 'sales',
+        component: SalesComponent
+      },
+      {
+        path: 'procurement',
+        component: ProcurementComponent
+      },
+      {
+        path: 'inventory',
+        component: InventoryComponent
+      },
+      {
+        path: 'product/:id',
+        component: ProductComponent
+      },
+      {
+        path: 'client/:id',
+        component: ClientComponent
+      }
+    ]
   },
   {
     path: 'login',
@@ -44,7 +51,7 @@ const routes: Routes = [
   },
   { // Ver aqui depois se fica assim ou se temos uma 404 page
     path: '**',
-    redirectTo: '/'
+    redirectTo: 'login'
   }
 ];
 

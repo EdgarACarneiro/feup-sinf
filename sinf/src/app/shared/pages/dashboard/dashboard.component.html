@@ -1,0 +1,64 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header d-flex justify-content-center mb-3">
+      <img src="assets/img/logo-white.svg" width="35" height="35">
+      <h3>Mango</h3>
+    </div>
+
+    <div class="d-flex flex-column">
+
+      <button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="btn dash-link d-flex align-items-center">
+        <span class="lnr lnr-pie-chart"></span>
+        <span class="pl-3">OVERVIEW</span>
+      </button>
+
+      <button routerLink="/sales" routerLinkActive="active" class="btn dash-link d-flex align-items-center">
+        <span class="lnr lnr-cart"></span>
+        <span class="pl-3">SALES</span>
+      </button>
+
+      <button routerLink="/financial" routerLinkActive="active" class="btn dash-link d-flex align-items-center">
+        <span class="lnr lnr-briefcase"></span>
+        <span class="pl-3">FINANCIAL</span>
+      </button>
+
+      <button routerLink="/procurement" routerLinkActive="active" class="btn dash-link d-flex align-items-center">
+        <span class="lnr lnr-book"></span>
+        <span class="pl-3">PROCUREMENT</span>
+      </button>
+
+      <button routerLink="/inventory" routerLinkActive="active" class="btn dash-link d-flex align-items-center">
+        <span class="lnr lnr-store"></span>
+        <span class="pl-3">INVENTORY</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center">
+
+      <button type="button" id="sidebarCollapse" class="btn btn-light mt-1">
+        <span class="lnr lnr-menu"></span>
+      </button>
+
+      <h4>Dashboard</h4>
+      <button type="button" class="btn btn-primary pivot d-flex align-items-center">
+        <span class="lnr lnr-clock"></span>
+        From 2017 to 2018
+      </button>
+
+      <button type="button" class="btn btn-light nav-button ml-auto">
+        <span class="lnr lnr-power-switch"></span>
+        <span class="text">Log Out</span>
+      </button>
+
+    </nav>
+
+    <router-outlet></router-outlet>
+
+  </div>
+</div>
