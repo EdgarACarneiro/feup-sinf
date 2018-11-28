@@ -1,13 +1,23 @@
 /*
+* OVERRIDE BOOTSTRAP VARIABLES
+*/
+
+$theme-colors: (
+    "primary": #FB404B,
+    "secondary": #777777
+);
+
+$font-family-heading: "Montserrat", sans-serif;
+$font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+/*
 * VARIABLES
 */
 
-$strong-red: #BB0502;
 $light-red: #FB404B;
-$medium-grey: #777777;
-$light-grey: rgba(203, 203, 210, .15);
-$font-family-heading: 'Montserrat', sans-serif;
-$font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
+$strong-red: #BB0502;
 
 /*
 * GLOBAL STYLES
@@ -24,28 +34,39 @@ body {
     padding: 0 1.8em;
 }
 
-.btn-primary {
-    background-color: $light-red;
-    border-color: $light-red;
+.btn-light {
+    background-color: transparent;
+    color: $gray-600;
+    border: none;
     &:hover,
     &:active {
-        background-color: $strong-red !important;
-        border-color: $strong-red !important;
+        background-color: $gray-100 !important;
     }
     &:focus {
         box-shadow: none !important;
     }
 }
 
-.btn-light {
-    background-color: transparent;
-    color: $medium-grey;
-    border: none;
-    &:hover,
-    &:active {
-        background-color: $light-grey !important;
+/*
+* KPI'S STYLES
+*/
+
+.kpi-container {
+    background-color: white;
+    width: 100%;
+    border: 1px solid rgba($color: black, $alpha: 0.1);
+    border-radius: 0.25em;
+    .card-title {
+        font-weight: 100;
+        margin: 0;
     }
-    &:focus {
-        box-shadow: none !important;
+    .card-text {
+        font-size: 0.8em;
+        //color: $medium-grey;
+    }
+    .kpi-content {
+        &.kpi-value {
+            font-size: 2em;
+        }
     }
 }
