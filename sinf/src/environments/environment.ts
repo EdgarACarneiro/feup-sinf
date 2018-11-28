@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: 'http://localhost:2018/WebApi', // Verify port
+  username: 'FEUP',
+  password: 'qualquer1',
+  company: 'DEMO',
+  instance: 'DEFAULT',
+  grant_type: 'password',
+  line: 'professional'
 };
 
 /*
