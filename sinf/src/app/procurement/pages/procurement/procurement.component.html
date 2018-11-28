@@ -1,3 +1,57 @@
-<p>
-  procurement works!
-</p>
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Procurement</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-4">
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        74 %
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        74 %
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        74 %
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
+          (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        74 %
+      </div>
+    </div>
+  </div>
+</div>
