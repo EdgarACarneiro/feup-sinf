@@ -1,3 +1,141 @@
-<p>
-  sales works!
-</p>
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Sales</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-4">
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        74 %
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        € 30M
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Table</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">STORE</th>
+              <th scope="col">QUANTITY</th>
+              <th scope="col">AMOUNT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Downtown</td>
+              <td>12K</td>
+              <td>3M €</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <div class="kpi-container">
+      <h4>KPI Table</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">AMOUNT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>iPhone XS</td>
+              <td>2.2M €</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
+          (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+  </div>
+</div>

@@ -19,7 +19,6 @@ export class OverviewComponent implements OnInit {
   ];
   public lineChartLabels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   public lineChartType: string = 'line';
-  public pieChartType: string = 'pie';
 
   // barChart
   public barChartOptions:any = {
