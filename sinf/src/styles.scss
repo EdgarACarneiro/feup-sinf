@@ -18,7 +18,6 @@ $font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
 
 $light-red: #FB404B;
 $strong-red: #BB0502;
-
 /*
 * GLOBAL STYLES
 */
@@ -26,12 +25,11 @@ $strong-red: #BB0502;
 html,
 body {
     height: 100%;
-    overflow-y: hidden;
     font-family: $font-family-base;
 }
 
 .container-fluid {
-    padding: 0 1.8em;
+    padding: 1.2em 1.8em;
 }
 
 .btn-light {
@@ -51,22 +49,44 @@ body {
 * KPI'S STYLES
 */
 
+div[class^='col-'] {
+    &>div:not(:first-child).kpi-container {
+        margin-top: 1em;
+    }
+    &:not(:first-child) {
+        @include media-breakpoint-down(sm) {
+            margin-top: 1em;
+        }
+    }
+}
+
 .kpi-container {
     background-color: white;
-    width: 100%;
+    padding: 1em;
     border: 1px solid rgba($color: black, $alpha: 0.1);
     border-radius: 0.25em;
-    .card-title {
+    h4 {
         font-weight: 100;
         margin: 0;
     }
-    .card-text {
+    p {
         font-size: 0.8em;
-        //color: $medium-grey;
+        color: $gray-600;
     }
     .kpi-content {
         &.kpi-value {
             font-size: 2em;
+        }
+        .table {
+            th {
+                font-weight: 100;
+                color: $gray-600;
+                font-size: 0.8em;
+                border-top: none;
+            }
+            td {
+                font-size: 0.9em;
+            }
         }
     }
 }

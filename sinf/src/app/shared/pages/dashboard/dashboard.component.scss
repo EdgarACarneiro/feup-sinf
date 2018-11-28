@@ -5,7 +5,6 @@
 
 .navbar {
     background: white !important;
-    margin-bottom: 1.3em;
     border-bottom: 1px solid #e7e7e7;
     h4 {
         color: $gray-600;
@@ -93,7 +92,7 @@
 * MEDIAQUERIES
 */
 
-@media (max-width: 768px) {
+@include media-breakpoint-down(md) {
     .navbar {
         h4 {
             display: none;
