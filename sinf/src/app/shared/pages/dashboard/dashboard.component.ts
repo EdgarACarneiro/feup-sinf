@@ -12,4 +12,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  toogleSidebar(){
+    document.getElementById("sidebar").classList.toggle('active');
+  }
 }

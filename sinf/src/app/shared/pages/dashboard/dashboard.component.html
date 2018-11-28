@@ -41,7 +41,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex align-items-center">
 
-      <button type="button" id="sidebarCollapse" class="btn btn-light mt-1">
+      <button type="button" id="sidebarCollapse" class="btn btn-light mt-1" (click)="toogleSidebar()">
         <span class="lnr lnr-menu"></span>
       </button>
 
@@ -61,7 +61,7 @@
             </button>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-primary nav-button ml-auto">
+            <button type="button" class="btn btn-primary d-flex align-items-center">
               <span class="lnr lnr-power-switch"></span>
               Log Out
             </button>

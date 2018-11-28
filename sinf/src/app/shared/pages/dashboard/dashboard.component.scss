@@ -8,7 +8,7 @@
     margin-bottom: 1.3em;
     border-bottom: 1px solid #e7e7e7;
     h4 {
-        color: $medium-grey;
+        color: $gray-600;
         font-size: 1.2em;
         margin: auto 3em auto 1em;
     }
@@ -86,7 +86,7 @@
     width: 100%;
     min-height: 100vh;
     transition: all 0.3s;
-    background-color: rgb(247, 247, 249);
+    background-color: $gray-100;
 }
 
 /*
