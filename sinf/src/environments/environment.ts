@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:2222/WebApi', // Verify port
+  api: 'http://d14a8213.ngrok.io/WebApi', // Verify port // Diogo: http://ddffeb42.ngrok.io/WebApi/
   username: 'FEUP',
   password: 'qualquer1',
   company: 'DEMO',

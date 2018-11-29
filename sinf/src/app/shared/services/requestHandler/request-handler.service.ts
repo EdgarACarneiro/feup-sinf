@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { catchError, retry, tap } from 'rxjs/operators';
+import { tap, retryWhen, take, delay } from 'rxjs/operators';
 import { isNull } from 'util';
 
 @Injectable({
@@ -20,36 +20,37 @@ export class RequestHandlerService {
         })
       }
     ).pipe(
-      tap(
-        null, // Doing nothing on sucess
-        (err: any) => {
-          if (err.status === 500) { // Request Token
-            this.requestToken();
-          }
-        }
-      ),
-      retry(2)
+      retryWhen(errors => { // Alterar isto para sem RetryWhen e om Error, depoletar novamente o pedido atualizado 
+        return errors.pipe(
+          tap(
+            (err: any) => {
+              if (err.status === 500) { // Request Token
+                this.requestToken();
+              }
+            }
+          ),
+          delay(1000),
+          take(3));
+      })
     ).subscribe();
   }
 
   requestToken() {
     this.http.post(
       `${environment.api}/token`,
-        `username=${environment.username}&
-        password=${environment.password}&
-        company=${environment.company}&
-        grant_type=${environment.grant_type}&
-        instance=${environment.instance}&
-        line=${environment.line}`,
+      `username=${environment.username}&
+      password=${environment.password}&
+      company=${environment.company}&
+      grant_type=${environment.grant_type}&
+      instance=${environment.instance}&
+      line=${environment.line}`,
       {
         headers: new HttpHeaders({
           'Content-Type': 'application/x-www-form-urlencoded'
         })
       }
     ).subscribe(
-      (response: any) => {
-        this.setToken(response.acess_token);
-      }
+      (response: any) => this.setToken(response.access_token)
     );
   }
 
@@ -57,13 +58,13 @@ export class RequestHandlerService {
    * Methods to handle primavera Token
    */
 
-  private getToken() : string {
-    let token : string = localStorage.getItem('primaveraToken');
+  private getToken(): string {
+    let token: string = localStorage.getItem('primaveraToken');
 
-    return isNull(token)? '' : token;
+    return isNull(token) ? '' : token;
   }
 
-  private setToken(value: string) : void{
+  private setToken(value: string): void {
     localStorage.setItem('primaveraToken', `Bearer ${value}`);
   }
 }
