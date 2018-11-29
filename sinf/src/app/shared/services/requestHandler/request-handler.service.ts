@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { catchError, retry, tap } from 'rxjs/operators';
+import { isNull } from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +14,22 @@ export class RequestHandlerService {
   getRequest(endpoint: string, body: object) {
     this.http.get(
       `${environment.api}/${endpoint}`,
-
-    )
+      {
+        headers: new HttpHeaders({
+          Authorization: this.getToken()
+        })
+      }
+    ).pipe(
+      tap(
+        null, // Doing nothing on sucess
+        (err: any) => {
+          if (err.status === 500) { // Request Token
+            this.requestToken();
+          }
+        }
+      ),
+      retry(2)
+    ).subscribe();
   }
 
   requestToken() {
@@ -31,18 +46,24 @@ export class RequestHandlerService {
           'Content-Type': 'application/x-www-form-urlencoded'
         })
       }
-    ).subscribe();
+    ).subscribe(
+      (response: any) => {
+        this.setToken(response.acess_token);
+      }
+    );
   }
 
   /**
    * Methods to handle primavera Token
    */
 
-  private getToken() {
-    localStorage.getItem('primaveraToken');
+  private getToken() : string {
+    let token : string = localStorage.getItem('primaveraToken');
+
+    return isNull(token)? '' : token;
   }
 
-  private setToken(value: string) {
-    localStorage.setItem('primaveraToken', value);
+  private setToken(value: string) : void{
+    localStorage.setItem('primaveraToken', `Bearer ${value}`);
   }
 }
