@@ -58,7 +58,7 @@ export class webApiService {
           'Content-Type': 'application/x-www-form-urlencoded'
         })
       }
-    ).pipe(tap(retry(2),
+    ).pipe(retry(2),tap(
       (response: any) => this.setToken(response.access_token)
     ));
   }

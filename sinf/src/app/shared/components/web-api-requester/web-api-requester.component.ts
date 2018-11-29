@@ -16,7 +16,7 @@ export class WebApiRequesterComponent implements OnInit {
   /**
    * Endpoint being used - TODO: Change to @Input type
    */
-  private endpoint: string;
+  private endpoint: string = 'Administrador/ListaEmpresas';
   /**
    * True if is post, false if is get. Defaults to false
    */
@@ -45,21 +45,23 @@ export class WebApiRequesterComponent implements OnInit {
   }
 
   fetchData() {
-    let request: Observable<Object> = this.isPost ?
-      this.webApi.post(this.endpoint, this.body) :
-      this.webApi.get(this.endpoint);
-
-    request.subscribe(
-      (response: any) => console.log(response), //this.data = response.data
+    this.getRequest().subscribe(
+      (response: any) => this.data = response,
       (err: any) => {
         if (err.status === 500)
           this.webApi.fetchToken().subscribe(
-            () => request.subscribe(
-              (secResponse: any) => console.log(secResponse)
+            () => this.getRequest().subscribe(
+              (response: any) => this.data = response
             )
           );
       }
     );
+  }
+
+  private getRequest() : Observable<Object> {
+    return this.isPost ?
+      this.webApi.post(this.endpoint, this.body) :
+      this.webApi.get(this.endpoint);
   }
 
   getData(): any {
