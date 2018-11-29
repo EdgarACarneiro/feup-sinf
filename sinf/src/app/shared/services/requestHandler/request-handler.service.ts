@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpEvent } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { catchError, retry, tap } from 'rxjs/operators';
 
@@ -20,24 +20,23 @@ export class RequestHandlerService {
   requestToken() {
     this.http.post(
       `${environment.api}/token`,
+        `username=${environment.username}&
+        password=${environment.password}&
+        company=${environment.company}&
+        grant_type=${environment.grant_type}&
+        instance=${environment.instance}&
+        line=${environment.line}`,
       {
-        username: environment.username,
-        password: environment.password,
-        company: environment.company,
-        instance: environment.instance,
-        grant_type: environment.grant_type,
-        line: environment.line
-      },
-      null // Verify if header can be null
-    ).pipe(
-      tap(
-        null, // To Do, need to check Postman answer first
-        null // Retry 3 times (?)
-      )
-    );
+        headers: new HttpHeaders({
+          'Content-Type': 'application/x-www-form-urlencoded'
+        })
+      }
+    ).subscribe();
   }
 
-  // Methods to handle primavera Token
+  /**
+   * Methods to handle primavera Token
+   */
 
   private getToken() {
     localStorage.getItem('primaveraToken');

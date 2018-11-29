@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:2018/WebApi', // Verify port
+  api: 'http://localhost:2222/WebApi', // Verify port
   username: 'FEUP',
   password: 'qualquer1',
   company: 'DEMO',

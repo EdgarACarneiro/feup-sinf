@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RequestHandlerService } from 'src/app/shared/services/requestHandler/request-handler.service';
 
 @Component({
   selector: 'app-overview',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OverviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private test : RequestHandlerService) { }
 
   ngOnInit() {
+    this.test.requestToken();
   }
 
   // lineChart
