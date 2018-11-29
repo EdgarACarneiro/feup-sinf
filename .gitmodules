@@ -1,0 +1,3 @@
+[submodule "saft-api"]
+	path = saft-api
+	url = https://github.com/AndreFCruz/saft-api.git
