@@ -14,6 +14,7 @@ import { ProcurementComponent } from './procurement/pages/procurement/procuremen
 import { ProductComponent } from './product/pages/product/product.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
+import { WebApiRequesterComponent } from './shared/components/web-api-requester/web-api-requester.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DashboardComponent } from './shared/pages/dashboard/dashboard.component
     ProcurementComponent,
     ProductComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    WebApiRequesterComponent
   ],
   imports: [
     BrowserModule,

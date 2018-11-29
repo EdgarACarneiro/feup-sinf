@@ -3,17 +3,21 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { tap, retry } from 'rxjs/operators';
 import { isNull } from 'util';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class RequestHandlerService {
+export class webApiService {
 
   constructor(private http: HttpClient) { }
 
-  private teste(endpoint: string) {
+  /**
+   * GET request to the WebApi
+   */
+  get(endpoint: string) : Observable<Object> {
     return this.http.get(
-      `${environment.api}/${endpoint}`,
+      `${environment.webApi}/${endpoint}`,
       {
         headers: new HttpHeaders({
           Authorization: this.getToken()
@@ -22,26 +26,27 @@ export class RequestHandlerService {
     );
   }
 
-  getRequest(endpoint: string) {
-    return this.teste(endpoint).pipe(
-      tap(
-        null,
-        () => {
-          this.requestToken().
-            pipe(tap(retry(2))).
-            subscribe(
-              () => this.teste(endpoint).subscribe(
-                (response) => console.log(response)
-              )
-            )
-        }
-      )
-    ).subscribe();
+  /**
+   * POST request t the WebApi
+   */
+  post(endpoint: string, body: any) : Observable<Object> {
+    return this.http.post(
+      `${environment.webApi}/${endpoint}`,
+      body,
+      {
+        headers: new HttpHeaders({
+          Authorization: this.getToken()
+        })
+      }
+    );
   }
 
-  requestToken() {
+  /**
+   * Fetch the Authentication Token from the WebApi and save it
+   */
+  fetchToken() : Observable<Object> {
     return this.http.post(
-      `${environment.api}/token`,
+      `${environment.webApi}/token`,
       `username=${environment.username}&
       password=${environment.password}&
       company=${environment.company}&
@@ -53,13 +58,13 @@ export class RequestHandlerService {
           'Content-Type': 'application/x-www-form-urlencoded'
         })
       }
-    ).pipe(tap(
+    ).pipe(tap(retry(2),
       (response: any) => this.setToken(response.access_token)
     ));
   }
 
   /**
-   * Methods to handle primavera Token
+   * Methods to handle Primavera Token
    */
 
   private getToken(): string {
