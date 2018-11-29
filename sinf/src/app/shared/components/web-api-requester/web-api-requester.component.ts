@@ -44,6 +44,9 @@ export class WebApiRequesterComponent implements OnInit {
     this.body = body;
   }
 
+  /**
+   * Fetch the data using configuration from the WebApi and save it in the Class's data property
+   */
   fetchData() {
     this.getRequest().subscribe(
       (response: any) => this.data = response,
@@ -58,6 +61,9 @@ export class WebApiRequesterComponent implements OnInit {
     );
   }
 
+  /**
+   * Retrieve the adequate request. Either a POST or a GET method.
+   */
   private getRequest() : Observable<Object> {
     return this.isPost ?
       this.webApi.post(this.endpoint, this.body) :
