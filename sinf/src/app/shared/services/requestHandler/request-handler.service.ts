@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { tap, retryWhen, take, delay } from 'rxjs/operators';
+import { tap, retry } from 'rxjs/operators';
 import { isNull } from 'util';
 
 @Injectable({
@@ -11,32 +11,36 @@ export class RequestHandlerService {
 
   constructor(private http: HttpClient) { }
 
-  getRequest(endpoint: string, body: object) {
-    this.http.get(
+  private teste(endpoint: string) {
+    return this.http.get(
       `${environment.api}/${endpoint}`,
       {
         headers: new HttpHeaders({
           Authorization: this.getToken()
         })
       }
-    ).pipe(
-      retryWhen(errors => { // Alterar isto para sem RetryWhen e om Error, depoletar novamente o pedido atualizado 
-        return errors.pipe(
-          tap(
-            (err: any) => {
-              if (err.status === 500) { // Request Token
-                this.requestToken();
-              }
-            }
-          ),
-          delay(1000),
-          take(3));
-      })
+    );
+  }
+
+  getRequest(endpoint: string) {
+    return this.teste(endpoint).pipe(
+      tap(
+        null,
+        () => {
+          this.requestToken().
+            pipe(tap(retry(2))).
+            subscribe(
+              () => this.teste(endpoint).subscribe(
+                (response) => console.log(response)
+              )
+            )
+        }
+      )
     ).subscribe();
   }
 
   requestToken() {
-    this.http.post(
+    return this.http.post(
       `${environment.api}/token`,
       `username=${environment.username}&
       password=${environment.password}&
@@ -49,9 +53,9 @@ export class RequestHandlerService {
           'Content-Type': 'application/x-www-form-urlencoded'
         })
       }
-    ).subscribe(
+    ).pipe(tap(
       (response: any) => this.setToken(response.access_token)
-    );
+    ));
   }
 
   /**

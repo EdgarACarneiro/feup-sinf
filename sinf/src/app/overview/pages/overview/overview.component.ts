@@ -11,8 +11,8 @@ export class OverviewComponent implements OnInit {
   constructor(private test : RequestHandlerService) { }
 
   ngOnInit() {
-    this.test.getRequest('Administrador/ListaEmpresas', null);
-    //this.test.requestToken();
+    this.test.getRequest('Administrador/ListaEmpresas');
+    //this.test.requestToken().subscribe();
   }
 
   // lineChart
