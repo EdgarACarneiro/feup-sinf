@@ -29,7 +29,6 @@ export class GrossNetSalesComponent implements OnInit {
     let temp: Array<Object> = data.filter((el) =>
       el.InvoiceNo.startsWith('FA')
     );
-    console.log(temp);
 
     temp.map((el: any) => {
       let idx = parseInt(el.InvoiceDate.slice(5, 7)) - 1;

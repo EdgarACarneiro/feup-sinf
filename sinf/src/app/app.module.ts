@@ -15,6 +15,10 @@ import { ProductComponent } from './product/pages/product/product.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 import { WebApiRequesterComponent } from './shared/components/web-api-requester/web-api-requester.component';
+import { KpiLineChartComponent } from './shared/components/kpi-line-chart/kpi-line-chart.component';
+import { KpiBarChartComponent } from './shared/components/kpi-bar-chart/kpi-bar-chart.component';
+import { KpiPieChartComponent } from './shared/components/kpi-pie-chart/kpi-pie-chart.component';
+import { KpiValueComponent } from './shared/components/kpi-value/kpi-value.component';
 import { GrossNetSalesComponent } from './financial/components/gross-net-sales/gross-net-sales.component';
 
 @NgModule({
@@ -30,7 +34,11 @@ import { GrossNetSalesComponent } from './financial/components/gross-net-sales/g
     LoginComponent,
     DashboardComponent,
     WebApiRequesterComponent,
-    GrossNetSalesComponent
+    GrossNetSalesComponent,
+    KpiLineChartComponent,
+    KpiBarChartComponent,
+    KpiPieChartComponent,
+    KpiValueComponent
   ],
   imports: [
     BrowserModule,
