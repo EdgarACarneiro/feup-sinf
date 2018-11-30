@@ -15,6 +15,10 @@ import { ProductComponent } from './product/pages/product/product.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 import { WebApiRequesterComponent } from './shared/components/web-api-requester/web-api-requester.component';
+import { KpiLineChartComponent } from './shared/components/kpi-line-chart/kpi-line-chart.component';
+import { KpiBarChartComponent } from './shared/components/kpi-bar-chart/kpi-bar-chart.component';
+import { KpiPieChartComponent } from './shared/components/kpi-pie-chart/kpi-pie-chart.component';
+import { KpiValueComponent } from './shared/components/kpi-value/kpi-value.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { WebApiRequesterComponent } from './shared/components/web-api-requester/
     ProductComponent,
     LoginComponent,
     DashboardComponent,
-    WebApiRequesterComponent
+    WebApiRequesterComponent,
+    KpiLineChartComponent,
+    KpiBarChartComponent,
+    KpiPieChartComponent,
+    KpiValueComponent
   ],
   imports: [
     BrowserModule,
