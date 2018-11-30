@@ -15,6 +15,7 @@ import { ProductComponent } from './product/pages/product/product.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 import { WebApiRequesterComponent } from './shared/components/web-api-requester/web-api-requester.component';
+import { GrossNetSalesComponent } from './financial/components/gross-net-sales/gross-net-sales.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WebApiRequesterComponent } from './shared/components/web-api-requester/
     ProductComponent,
     LoginComponent,
     DashboardComponent,
-    WebApiRequesterComponent
+    WebApiRequesterComponent,
+    GrossNetSalesComponent
   ],
   imports: [
     BrowserModule,
