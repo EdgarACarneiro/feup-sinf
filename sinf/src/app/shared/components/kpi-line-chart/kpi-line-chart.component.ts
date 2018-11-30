@@ -12,22 +12,19 @@ export class KpiLineChartComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() private data: Array<any> = [];
-
-  @Input() private labels: Array<any> = [];
-
   @Input() private title: string;
 
   @Input() private description: string;
+
+  @Input() private data: Array<any> = [];
+
+  @Input() private labels: Array<any> = [];
 
   public options: any = {
     scaleShowVerticalLines: false,
     responsive: true,
     legend: {
-      position: 'bottom',
-      labels: {
-        padding: 40
-      }
+      position: 'bottom'
     }
   };
 

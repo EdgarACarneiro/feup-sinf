@@ -23,10 +23,7 @@ export class KpiBarChartComponent implements OnInit {
     scaleShowVerticalLines: false,
     responsive: true,
     legend: {
-      position: 'bottom',
-      labels: {
-        padding: 40
-      }
+      position: 'bottom'
     }
   };
 
@@ -49,13 +46,13 @@ export class KpiBarChartComponent implements OnInit {
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(77,83,96,0.8)'
     },
-    { // red
-      backgroundColor: 'rgba(251,64,75,0.5)',
-      borderColor: 'rgba(251,64,75,0.8)',
-      pointBackgroundColor: 'rgba(251,64,75,0.8)',
+    { // orange
+      backgroundColor: 'rgba(251,147,64,0.2)',
+      borderColor: 'rgba(251,147,64,0.8)',
+      pointBackgroundColor: 'rgba(251,147,64,0.8)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(251,64,75,0.8)'
+      pointHoverBorderColor: 'rgba(251,147,64,0.8)'
     }
   ];
 
