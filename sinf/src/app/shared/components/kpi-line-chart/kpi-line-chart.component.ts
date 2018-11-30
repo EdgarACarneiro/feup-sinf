@@ -12,13 +12,13 @@ export class KpiLineChartComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() private data: Array<any> = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
-    { data: [18, 48, 77, 9, 100, 27, 40], label: 'Series C' }
-  ];
+  @Input() private data: Array<any> = [];
 
-  @Input() private labels: Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  @Input() private labels: Array<any> = [];
+
+  @Input() private title: string;
+
+  @Input() private description: string;
 
   public options: any = {
     scaleShowVerticalLines: false,

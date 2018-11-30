@@ -4,7 +4,6 @@
   <span class="breadcrumb-item active">Financial</span>
 </nav>
 -->
-<app-gross-net-sales></app-gross-net-sales>
 <div class="row">
   <div class="col-sm-12 col-md-6">
     <div class="kpi-container">
@@ -17,14 +16,7 @@
     </div>
   </div>
   <div class="col-sm-12 col-md-6">
-    <div class="kpi-container">
-      <h4>KPI Graph</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
-          (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
+    <app-gross-net-sales></app-gross-net-sales>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
     <div class="kpi-container">

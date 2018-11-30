@@ -38,4 +38,11 @@ export class GrossNetSalesComponent implements OnInit {
     });
   }
 
+  getChartData() : Array<Object> {
+    return [
+      { data: this.grossResult, label: 'Gross Sales' },
+      { data: this.netResult, label: 'Net Sales' }
+    ];
+  }
+
 }
