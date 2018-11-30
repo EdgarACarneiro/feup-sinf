@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { webApiService } from '../../services/webApi/web-api.service';
 import { Observable } from 'rxjs';
 
@@ -16,15 +16,15 @@ export class WebApiRequesterComponent implements OnInit {
   /**
    * Endpoint being used - TODO: Change to @Input type
    */
-  private endpoint: string = 'Administrador/ListaEmpresas';
+  @Input() private endpoint: string; // TODO: remove = 'Administrador/ListaEmpresas';
   /**
    * True if is post, false if is get. Defaults to false
    */
-  private isPost: boolean = false;
+  @Input() private isPost: boolean = false;
   /**
-   * Body in case of Post Request
+   * Body in case of Post Request. Defaults to empty object
    */
-  private body: any;
+  @Input() private body: object = {};
 
   /**
    * Component to be extended by graphical components
@@ -36,18 +36,10 @@ export class WebApiRequesterComponent implements OnInit {
   }
 
   /**
-   * Config properties used to make requests
-   */
-  config(endpoint: string, isPost: boolean = false, body: any = null) {
-    this.endpoint = endpoint;
-    this.isPost = isPost;
-    this.body = body;
-  }
-
-  /**
    * Fetch the data using configuration from the WebApi and save it in the Class's data property
    */
   fetchData() {
+    console.log(this.endpoint);
     this.getRequest().subscribe(
       (response: any) => this.data = response,
       (err: any) => {
