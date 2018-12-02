@@ -23,6 +23,7 @@ import { GrossNetSalesComponent } from './financial/components/gross-net-sales/g
 import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cumulative-sales.component';
 import { AcountsPayableComponent } from './procurement/components/acounts-payable/acounts-payable.component';
 import { TopSuppliersComponent } from './procurement/components/top-suppliers/top-suppliers.component';
+import { TopProductsComponent } from './inventory/components/top-products/top-products.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { TopSuppliersComponent } from './procurement/components/top-suppliers/to
     KpiValueComponent,
     CumulativeSalesComponent,
     AcountsPayableComponent,
-    TopSuppliersComponent
+    TopSuppliersComponent,
+    TopProductsComponent
   ],
   imports: [
     BrowserModule,
