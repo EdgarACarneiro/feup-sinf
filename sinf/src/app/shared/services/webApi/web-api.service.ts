@@ -35,7 +35,8 @@ export class webApiService {
       body,
       {
         headers: new HttpHeaders({
-          Authorization: this.getToken()
+          Authorization: this.getToken(),
+          'Content-Type': 'application/json'
         })
       }
     );

@@ -22,6 +22,7 @@ import { KpiValueComponent } from './shared/components/kpi-value/kpi-value.compo
 import { GrossNetSalesComponent } from './financial/components/gross-net-sales/gross-net-sales.component';
 import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cumulative-sales.component';
 import { AcountsPayableComponent } from './procurement/components/acounts-payable/acounts-payable.component';
+import { TopClientsComponent } from './procurement/components/top-clients/top-clients.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AcountsPayableComponent } from './procurement/components/acounts-payabl
     KpiPieChartComponent,
     KpiValueComponent,
     CumulativeSalesComponent,
-    AcountsPayableComponent
+    AcountsPayableComponent,
+    TopClientsComponent
   ],
   imports: [
     BrowserModule,
