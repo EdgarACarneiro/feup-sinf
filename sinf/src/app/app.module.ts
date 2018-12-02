@@ -25,6 +25,7 @@ import { AcountsPayableComponent } from './procurement/components/acounts-payabl
 import { TopSuppliersComponent } from './procurement/components/top-suppliers/top-suppliers.component';
 import { TopProductsComponent } from './inventory/components/top-products/top-products.component';
 import { NetSalesComponent } from './sales/components/net-sales/net-sales.component';
+import { ProfitMarginComponent } from './sales/components/profit-margin/profit-margin.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { NetSalesComponent } from './sales/components/net-sales/net-sales.compon
     AcountsPayableComponent,
     TopSuppliersComponent,
     TopProductsComponent,
-    NetSalesComponent
+    NetSalesComponent,
+    ProfitMarginComponent
   ],
   imports: [
     BrowserModule,
