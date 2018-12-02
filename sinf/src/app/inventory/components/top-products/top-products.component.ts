@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-products',
@@ -18,7 +20,7 @@ export class TopProductsComponent implements OnInit {
    */
   private products: Object[] = [];
 
-  constructor(private saft: SafTService) { }
+  constructor(private saft: SafTService, private router: Router) { }
 
   ngOnInit() {
     this.saft.get('sales/top-selling-products').subscribe(
@@ -29,10 +31,15 @@ export class TopProductsComponent implements OnInit {
   private processData(data: Array<any>) {
     for (let i = 0; i < data.length && i < this.numProducts; ++i) {
       this.products.push({
+        code: data[i].ProductCode,
         name: data[i].ProductDescription,
         unitSold: data[i].Quantity,
         price: Math.round(data[i].UnitPrice)
       });
     }
+  }
+
+  private clickProject(code: string) {
+    this.router.navigate([`/product/${code}`]);
   }
 }

@@ -8,7 +8,7 @@ import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 })
 export class AccountsReceivableComponent implements OnInit {
   
-  private value: number;
+  private value: string;
 
   constructor(private saft: SafTService) { }
 
