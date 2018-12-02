@@ -14,7 +14,7 @@ export class CashFlowComponent implements OnInit {
 
   ngOnInit() {
     this.saft.get('GeneralAccounts/AccountID/11').subscribe(
-      (data: Array<any>) => this.cashFlow = (data[0].ClosingDebitBalance - data[0].ClosingCreditBalance)
+      (data: Array<any>) => this.cashFlow = (data[0].ClosingDebitBalance - data[0].ClosingCreditBalance).toFixed(1)
     );
   }
 

@@ -14,7 +14,7 @@ export class AcountsPayableComponent implements OnInit {
 
   ngOnInit() {
     this.SaftService.get('GeneralAccounts/AccountID/22').subscribe(
-      (data : Array<any>) => this.value = - (data[0].ClosingDebitBalance - data[0].ClosingCreditBalance)
+      (data : Array<any>) => this.value = - (data[0].ClosingDebitBalance - data[0].ClosingCreditBalance).toFixed(1)
     );
   }
 

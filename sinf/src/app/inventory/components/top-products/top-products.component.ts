@@ -31,7 +31,7 @@ export class TopProductsComponent implements OnInit {
       this.products.push({
         name: data[i].ProductDescription,
         unitSold: data[i].Quantity,
-        price: data[i].UnitPrice
+        price: Math.round(data[i].UnitPrice)
       });
     }
   }

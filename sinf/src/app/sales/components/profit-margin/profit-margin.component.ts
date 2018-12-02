@@ -15,7 +15,7 @@ export class ProfitMarginComponent implements OnInit {
   constructor(private saft: SafTService) { }
 
   ngOnInit() {
-    this.saft.get('GeneralAccounts/Accountid/71').subscribe(
+    this.saft.get('GeneralAccounts/AccountID/71').subscribe(
       (data: Array<any>) => this.revenueFromSales = data[0].ClosingCreditBalance
     );
     this.saft.get('GeneralAccounts/AccountID/61').subscribe(
