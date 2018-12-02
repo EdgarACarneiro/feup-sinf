@@ -28,6 +28,7 @@ import { NetSalesComponent } from './sales/components/net-sales/net-sales.compon
 import { ProfitMarginComponent } from './sales/components/profit-margin/profit-margin.component';
 import { CashFlowComponent } from './financial/components/cash-flow/cash-flow.component';
 import { AccountsReceivableComponent } from './financial/components/accounts-receivable/accounts-receivable.component';
+import { ProductDataComponent } from './product/components/product-data/product-data.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { AccountsReceivableComponent } from './financial/components/accounts-rec
     NetSalesComponent,
     ProfitMarginComponent,
     CashFlowComponent,
-    AccountsReceivableComponent
+    AccountsReceivableComponent,
+    ProductDataComponent
   ],
   imports: [
     BrowserModule,

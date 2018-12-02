@@ -17,7 +17,7 @@ export class WebApiRequesterComponent {
   /**
    * Component to be extended by graphical components
    */
-  constructor(private webApi: webApiService, private endpoint: string, private isPost: boolean = false, private body: string = "") {
+  constructor(private webApi: webApiService, private endpoint: string, private isPost: boolean = false, protected body: string = "") {
   }
 
   /**
