@@ -9,7 +9,7 @@ import { webApiService } from 'src/app/shared/services/webApi/web-api.service';
 })
 export class TopSuppliersComponent extends WebApiRequesterComponent implements OnInit, DoCheck {
 
-  public values: number[] = [];
+  public values: number[] = null;
 
   public labels: string[] = [];
 
@@ -25,6 +25,7 @@ export class TopSuppliersComponent extends WebApiRequesterComponent implements O
   ngDoCheck() {
     if (this.data !== undefined) {
       let suppliers = this.data.DataSet.Table;
+      this.values = [];
 
       for (let supplier of suppliers) {
         let value = Math.round(supplier.TotalDeb);
@@ -38,15 +39,4 @@ export class TopSuppliersComponent extends WebApiRequesterComponent implements O
       this.resetData();
     }
   }
-
-  getData() : any[] {
-    let result : any[] = [];
-
-    for (let i = 0; i < this.values.length; ++i) {
-      result.push({ data: [this.values[i]], label: this.labels[i] });
-    }
-
-    return result.length === 0 ? [{}] : result;
-  }
-
 }

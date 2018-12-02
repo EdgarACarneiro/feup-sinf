@@ -1,7 +1,8 @@
 <div class="kpi-container">
   <h4>{{title}}</h4>
   <p>A small very description.</p>
-  <div class="kpi-content">
+  <p>{{values}}</p>
+  <div *ngIf="data != null" class="kpi-content">
     <canvas baseChart
     [data]="data"
     [labels]="labels"
