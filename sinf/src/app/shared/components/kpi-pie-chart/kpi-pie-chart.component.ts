@@ -12,9 +12,11 @@ export class KpiPieChartComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() private data: number[] = [300, 500, 100];
+  @Input() private data: number[];
 
-  @Input() private labels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+  @Input() private labels: string[];
+
+  @Input() private title: string;
 
   public options: any = {
     scaleShowVerticalLines: false,

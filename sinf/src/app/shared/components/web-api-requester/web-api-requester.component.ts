@@ -45,4 +45,11 @@ export class WebApiRequesterComponent {
       this.webApi.post(this.endpoint, JSON.stringify(this.body)) :
       this.webApi.get(this.endpoint);
   }
+
+  /**
+   * Reset data to undefined value
+   */
+  protected resetData() {
+    this.data = undefined;
+  }
 }
