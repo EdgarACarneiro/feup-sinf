@@ -1,3 +1,112 @@
-<p>
-  product works!
-</p>
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <a class="breadcrumb-item">Product</a>
+  <span class="breadcrumb-item active">ID</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-4">
+    <div class="kpi-container">
+      <h4>Product Information</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <div>
+          <span class="badge badge-primary mr-3">ID</span>
+          <span class="product-info">1</span>
+        </div>
+        <div>
+          <span class="badge badge-primary mr-3">Name</span>
+          <span class="product-info">iPhone XS</span>
+        </div>
+        <div>
+          <span class="badge badge-primary mr-3">Supplier</span>
+          <span class="product-info">Apple</span>
+        </div>
+        <hr>
+        <div>
+          <span class="badge badge-info mr-3">Cost</span>
+          <span class="product-info">1000 €</span>
+        </div>
+        <div>
+          <span class="badge badge-info mr-3">Profit</span>
+          <span class="product-info">1100 €</span>
+        </div>
+        <hr>
+        <span class="badge badge-secondary">Details</span>
+        <p class="product-info">Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        10K
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Value</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content d-flex justify-content-center kpi-value">
+        2K
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <div class="kpi-container">
+      <h4>KPI Table</h4>
+      <p>A small very description.</p>
+      <div class="kpi-content">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">NAME</th>
+              <th scope="col">QUANTITY</th>
+              <th scope="col">AMOUNT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>John Doe</td>
+              <td>10</td>
+              <td>2K €</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">4</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td scope="row">5</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="kpi-container">
+      <h4>KPI Graph</h4>
+      <p>A small very description.</p>
+      <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
+        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </div>
+</div>
