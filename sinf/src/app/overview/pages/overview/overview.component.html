@@ -10,14 +10,7 @@
     <app-top-products numProducts="5"></app-top-products>
   </div>
   <div class="col-sm-12 col-md-8">
-    <div class="kpi-container">
-      <h4>KPI Graph</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
-          (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
+    <app-net-sales></app-net-sales>
     <div class="kpi-container">
       <h4>KPI Graph</h4>
       <p>A small very description.</p>

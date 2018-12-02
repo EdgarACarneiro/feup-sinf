@@ -21,14 +21,7 @@
         € 30M
       </div>
     </div>
-    <div class="kpi-container">
-      <h4>KPI Graph</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
+    <app-net-sales></app-net-sales>
     <div class="kpi-container">
       <h4>KPI Table</h4>
       <p>A small very description.</p>
