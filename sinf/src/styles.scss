@@ -4,7 +4,8 @@
 
 $theme-colors: (
     "primary": #FB404B,
-    "secondary": #777777
+    "secondary": #777777,
+    "info": rgb(64, 114, 251)
 );
 
 $font-family-heading: "Montserrat", sans-serif;
@@ -73,7 +74,7 @@ div[class^='col-'] {
         font-weight: 100;
         margin: 0;
     }
-    p {
+    >p {
         font-size: 0.8em;
         color: $gray-600;
     }
