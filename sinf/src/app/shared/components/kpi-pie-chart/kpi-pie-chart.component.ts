@@ -28,11 +28,14 @@ export class KpiPieChartComponent implements OnInit {
 
   public type: string = 'pie';
 
-  private colors: any[] = [{
+  public colors: any[] = [{
     backgroundColor: [
       "rgba(251,64,75,0.5)",
-      "rgba(77,83,96,0.5)",
-      "rgba(251,147,64,0.5)"]
+      "rgba(77,83,96,0.4)",
+      "rgba(44,130,190,0.4)",
+      "rgba(251,147,64,0.5)",
+      "rgba(135,120,177,0.4)"
+      ]
   }];
 
   // events
