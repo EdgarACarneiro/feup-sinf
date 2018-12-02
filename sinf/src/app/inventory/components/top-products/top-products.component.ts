@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 })
 export class TopProductsComponent implements OnInit {
 
-  private static MAX_TOP_PRODUCTS: number = 15;
+  @Input() numProducts: number = 15;
 
   /**
    * Properties of each top product:
@@ -27,7 +27,7 @@ export class TopProductsComponent implements OnInit {
   }
 
   private processData(data: Array<any>) {
-    for (let i = 0; i < data.length || i < TopProductsComponent.MAX_TOP_PRODUCTS; ++i) {
+    for (let i = 0; i < data.length && i < this.numProducts; ++i) {
       this.products.push({
         name: data[i].ProductDescription,
         unitSold: data[i].Quantity,
