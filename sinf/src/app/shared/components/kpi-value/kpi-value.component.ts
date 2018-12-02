@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-kpi-value',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kpi-value.component.scss']
 })
 export class KpiValueComponent implements OnInit {
+
+  @Input() title: string;
+
+  @Input() value: string;
 
   constructor() { }
 

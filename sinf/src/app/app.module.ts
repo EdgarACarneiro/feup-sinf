@@ -21,6 +21,7 @@ import { KpiPieChartComponent } from './shared/components/kpi-pie-chart/kpi-pie-
 import { KpiValueComponent } from './shared/components/kpi-value/kpi-value.component';
 import { GrossNetSalesComponent } from './financial/components/gross-net-sales/gross-net-sales.component';
 import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cumulative-sales.component';
+import { AcountsPayableComponent } from './procurement/components/acounts-payable/acounts-payable.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cu
     KpiBarChartComponent,
     KpiPieChartComponent,
     KpiValueComponent,
-    CumulativeSalesComponent
+    CumulativeSalesComponent,
+    AcountsPayableComponent
   ],
   imports: [
     BrowserModule,
