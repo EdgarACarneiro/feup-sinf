@@ -6,17 +6,17 @@
 
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
       <div class="form-group">
-        <label for="exampleInputEmail1">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
+        <label for="exampleInputUsername1">Username</label>
+        <input class="form-control" id="exampleInputUsername1" aria-describedby="emailHelp" placeholder="Enter username"
           ng-model="string" ng-required="true" autofocus formControlName="username">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your data with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="string"
           ng-required="true" formControlName="password">
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Log in</button>
     </form>
   </div>
 </main>

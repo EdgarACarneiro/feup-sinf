@@ -4,13 +4,14 @@ import { environment } from 'src/environments/environment';
 import { tap, retry } from 'rxjs/operators';
 import { isNull } from 'util';
 import { Observable } from 'rxjs';
+import { AuthenticationService } from 'src/app/user/services/authentication/authentication.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class webApiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private auth: AuthenticationService) { }
 
   /**
    * GET request to the WebApi
@@ -48,8 +49,8 @@ export class webApiService {
   fetchToken() : Observable<Object> {
     return this.http.post(
       `${environment.webApi}/token`,
-      `username=${environment.username}&
-      password=${environment.password}&
+      `username=${this.auth.getUsername()}&
+      password=${this.auth.getPassword()}&
       company=${environment.company}&
       grant_type=${environment.grant_type}&
       instance=${environment.instance}&
