@@ -4,17 +4,17 @@
     <img src="../../../../assets/img/logo.svg" alt="Logo">
     <h2>Mango</h2>
 
-    <form>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
       <div class="form-group">
         <label for="exampleInputEmail1">Email</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
-          ng-model="string" ng-required="true">
+          ng-model="string" ng-required="true" autofocus formControlName="username">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" ng-model="string"
-          ng-required="true">
+          ng-required="true" formControlName="password">
       </div>
       <button type="submit" class="btn btn-primary btn-block">Log in</button>
     </form>
