@@ -10,6 +10,7 @@ import { ClientComponent } from './client/pages/client/client.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 import { AuthGuard } from './user/services/authGuard/auth.guard';
+import { UnauthGuard } from './user/services/unauthGuard/unauth.guard';
 
 const routes: Routes = [
   {
@@ -49,7 +50,8 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    canActivate: [UnauthGuard],
   },
   { // Ver aqui depois se fica assim ou se temos uma 404 page
     path: '**',

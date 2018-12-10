@@ -6,8 +6,6 @@ export const environment = {
   production: false,
   webApi: 'http://localhost:2222/WebApi', // Verify port
   safTApi: 'http://localhost:3000',
-  username: 'FEUP',
-  password: 'qualquer1',
   company: 'DEMO',
   instance: 'DEFAULT',
   grant_type: 'password',

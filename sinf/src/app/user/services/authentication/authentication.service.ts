@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -10,9 +11,9 @@ export class AuthenticationService {
 
   private password: string;
 
-  private authenticated: boolean = false;
+  private authenticated: boolean = localStorage.getItem('primaveraToken') !== null;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   setCredentials(username: string, password: string) {
     this.username = username;
@@ -36,8 +37,10 @@ export class AuthenticationService {
    */
   login(loginAction: Observable<Object>) {
     loginAction.subscribe(
-      () => this.authenticated = true,
-      () => console.log("Failed to login") // TODO change to error Notification
+      () => {
+        this.authenticated = true;
+        this.router.navigateByUrl('');
+      }
     );
   }
 }
