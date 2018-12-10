@@ -9,11 +9,13 @@ import { ProductComponent } from './product/pages/product/product.component';
 import { ClientComponent } from './client/pages/client/client.component';
 import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
+import { AuthGuard } from './user/services/authGuard/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    canActivate: [AuthGuard],
     children: [
       {
         path: '',

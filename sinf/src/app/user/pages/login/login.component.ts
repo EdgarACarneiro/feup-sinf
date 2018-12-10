@@ -28,8 +28,7 @@ export class LoginComponent implements OnInit {
     const { username, password} = this.loginForm.value;
 
     this.auth.setCredentials(username, password);
-    
-    this.webapi.fetchToken().subscribe();
+    this.auth.login(this.webapi.fetchToken());
   }
 
 }
