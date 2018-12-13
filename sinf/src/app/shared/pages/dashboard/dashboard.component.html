@@ -57,16 +57,18 @@
           <li class="nav-item active">
             <!-- Time Pivot -->
             <div class="dropdown">
-              <button class="btn btn-primary d-flex align-items-center" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-primary d-flex align-items-center" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="lnr lnr-clock"></span>
                 From 2017 to 2018
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a *ngFor="let frame of frames" (click)="pivotClick(frame)" class="dropdown-item">{{getTimeFrame(frame)}}</a>
+                <a *ngFor="let frame of frames" (click)="pivotClick(frame)" [ngClass]="frame === activeFrame? 'active' : ''" class="dropdown-item">
+                  {{getTimeFrame(frame)}}
+                </a>
               </div>
             </div>
-            
+
           </li>
           <li class="nav-item">
             <button type="button" class="btn btn-primary d-flex align-items-center">
