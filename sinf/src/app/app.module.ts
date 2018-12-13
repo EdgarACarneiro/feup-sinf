@@ -31,6 +31,7 @@ import { CashFlowComponent } from './financial/components/cash-flow/cash-flow.co
 import { AccountsReceivableComponent } from './financial/components/accounts-receivable/accounts-receivable.component';
 import { ProductDataComponent } from './product/components/product-data/product-data.component';
 import { UnitInStockComponent } from './product/components/unit-in-stock/unit-in-stock.component';
+import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,9 @@ import { UnitInStockComponent } from './product/components/unit-in-stock/unit-in
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    FiscalYearService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

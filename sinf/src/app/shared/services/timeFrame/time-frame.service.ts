@@ -17,6 +17,8 @@ export class TimeFrameService {
 
   private timeFrame: Object;
 
+  private year: number = 0;
+
   constructor() {
     this.currentFrame = TimeFrame.WholeYear;
     this.timeFrame = {
@@ -36,7 +38,7 @@ export class TimeFrameService {
   setTimeFrame(frame: TimeFrame) {
     switch (frame) {
       case TimeFrame.FirstSemester:
-        this.setObject("01/01", "31, 03", frame);
+        this.setObject("01/01", "31/03", frame);
         break;
 
       case TimeFrame.SecondSemester:
@@ -61,8 +63,12 @@ export class TimeFrameService {
   private setObject(begin: string, end: string, frame: TimeFrame) {
     this.currentFrame = frame;
     this.timeFrame = {
-      begin: begin,
-      end: end
+      begin: `${begin}/${this.year}`,
+      end: `${end}/${this.year}`
     };
+  }
+
+  setYear(year: number) {
+    this.year = year;
   }
 }

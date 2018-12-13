@@ -11,11 +11,15 @@ import { LoginComponent } from './user/pages/login/login.component';
 import { DashboardComponent } from './shared/pages/dashboard/dashboard.component';
 import { AuthGuard } from './user/services/authGuard/auth.guard';
 import { UnauthGuard } from './user/services/unauthGuard/unauth.guard';
+import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    resolve: {
+      fiscalYear: FiscalYearService
+    },
     canActivate: [AuthGuard],
     children: [
       {
