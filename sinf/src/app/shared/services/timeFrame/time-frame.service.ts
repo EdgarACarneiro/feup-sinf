@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
 export enum TimeFrame {
-  FullYear,
-  FirstSemester,
-  SecondSemester,
-  ThirdSemester,
-  FourthSemester
+  WholeYear = 'Whole Year',
+  FirstSemester = 'First Semester',
+  SecondSemester = 'Second Semester',
+  ThirdSemester = 'Third Semester',
+  FourthSemester = 'Fourth Semester'
 };
 
 @Injectable({
@@ -13,52 +13,52 @@ export enum TimeFrame {
 })
 export class TimeFrameService {
 
-  private timeObj: Object;
+  private timeFrame: Object;
 
   constructor() {
-    this.timeObj = {
+    this.timeFrame = {
       begin: "01/01",
       end: "31/12"
     };
   }
 
   getTimeFrame(): Object {
-    return this.timeObj;
+    return this.timeFrame;
   }
 
   setTimeFrame(frame: TimeFrame) {
     switch (frame) {
       case TimeFrame.FirstSemester:
-        this.timeObj = {
+        this.timeFrame = {
           begin: "01/01",
           end: "31/03"
         };
         break;
 
       case TimeFrame.SecondSemester:
-        this.timeObj = {
+        this.timeFrame = {
           begin: "01/04",
           end: "30/06"
         };
         break;
 
       case TimeFrame.ThirdSemester:
-        this.timeObj = {
+        this.timeFrame = {
           begin: "01/07",
           end: "30/09"
         };
         break;
 
       case TimeFrame.FourthSemester:
-        this.timeObj = {
+        this.timeFrame = {
           begin: "01/10",
           end: "31/12"
         };
         break;
 
-      case TimeFrame.FullYear:
+      case TimeFrame.WholeYear:
       default:
-        this.timeObj = {
+        this.timeFrame = {
           begin: "01/01",
           end: "31/12"
         };

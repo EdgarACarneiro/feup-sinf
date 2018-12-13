@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeFrameService, TimeFrame } from '../../services/timeFrame/time-frame.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,12 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  public frames: Array<TimeFrame>;
+
+  constructor(private timeService: TimeFrameService) {
+    this.frames =  Object.keys(TimeFrame) as Array<TimeFrame>;
+  }
 
   ngOnInit() {
   }
 
-  toogleSidebar(){
+  toogleSidebar() {
     document.getElementById("sidebar").classList.toggle('active');
+  }
+
+  getTimeFrame(frame: TimeFrame) : string {
+    return TimeFrame[frame];
+  }
+
+  pivotClick(frame: TimeFrame) {
+    console.log(frame);
   }
 }
