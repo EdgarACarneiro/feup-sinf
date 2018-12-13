@@ -15,7 +15,7 @@ export class TimeFrameService {
 
   private currentFrame: TimeFrame;
 
-  private timeFrame: Object;
+  private timeFrame;
 
   private year: number = 0;
 
@@ -70,5 +70,6 @@ export class TimeFrameService {
 
   setYear(year: number) {
     this.year = year;
+    this.setTimeFrame(this.currentFrame);
   }
 }
