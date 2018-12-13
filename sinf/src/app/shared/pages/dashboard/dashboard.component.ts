@@ -8,15 +8,14 @@ import { TimeFrameService, TimeFrame } from '../../services/timeFrame/time-frame
 })
 export class DashboardComponent implements OnInit {
 
-  private frames: Array<string>;
-  private activeFrame: string;
-
+  private frames: Array<TimeFrame>;
+  
   private timeObj;
 
   constructor(private timeService: TimeFrameService) {
-    this.frames =  Object.keys(TimeFrame);
+    this.frames =  Object.values(TimeFrame);
 
-    this.timeObj = this.timeService.getTimeFrame();
+    this.timeObj = this.timeService.getTimeObject();
   }
 
   ngOnInit() {
@@ -26,14 +25,13 @@ export class DashboardComponent implements OnInit {
     document.getElementById("sidebar").classList.toggle('active');
   }
 
-  getTimeFrame(frame: string) : TimeFrame {
-    return TimeFrame[frame];
+  getCurrentFrame(): TimeFrame {
+    return this.timeService.getCurrentFrame();
   }
 
   pivotClick(frame: TimeFrame) {
-    this.timeService.setTimeFrame(this.getTimeFrame(frame));
-    this.activeFrame = frame;
+    this.timeService.setTimeFrame(frame);
   
-    this.timeObj = this.timeService.getTimeFrame();
+    this.timeObj = this.timeService.getTimeObject();
   }
 }

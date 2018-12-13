@@ -13,55 +13,56 @@ export enum TimeFrame {
 })
 export class TimeFrameService {
 
+  private currentFrame: TimeFrame;
+
   private timeFrame: Object;
 
   constructor() {
+    this.currentFrame = TimeFrame.WholeYear;
     this.timeFrame = {
       begin: "01/01",
       end: "31/12"
     };
   }
 
-  getTimeFrame(): Object {
+  getCurrentFrame() {
+    return this.currentFrame;
+  }
+
+  getTimeObject(): Object {
     return this.timeFrame;
   }
 
   setTimeFrame(frame: TimeFrame) {
     switch (frame) {
       case TimeFrame.FirstSemester:
-        this.timeFrame = {
-          begin: "01/01",
-          end: "31/03"
-        };
+        this.setObject("01/01", "31, 03", frame);
         break;
 
       case TimeFrame.SecondSemester:
-        this.timeFrame = {
-          begin: "01/04",
-          end: "30/06"
-        };
+        this.setObject("01/04", "30/06", frame);
         break;
 
       case TimeFrame.ThirdSemester:
-        this.timeFrame = {
-          begin: "01/07",
-          end: "30/09"
-        };
+        this.setObject("01/07", "30/09", frame);
         break;
 
       case TimeFrame.FourthSemester:
-        this.timeFrame = {
-          begin: "01/10",
-          end: "31/12"
-        };
+        this.setObject("01/10", "31/12", frame);
         break;
 
       case TimeFrame.WholeYear:
       default:
-        this.timeFrame = {
-          begin: "01/01",
-          end: "31/12"
-        };
+        this.setObject("01/01", "31/12", TimeFrame.WholeYear);
+        break;
     }
+  }
+
+  private setObject(begin: string, end: string, frame: TimeFrame) {
+    this.currentFrame = frame;
+    this.timeFrame = {
+      begin: begin,
+      end: end
+    };
   }
 }

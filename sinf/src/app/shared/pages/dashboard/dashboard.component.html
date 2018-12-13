@@ -60,11 +60,11 @@
               <button class="btn btn-primary d-flex align-items-center" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="lnr lnr-clock"></span>
-                From 2017 to 2018
+                  {{getCurrentFrame()}}
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a *ngFor="let frame of frames" (click)="pivotClick(frame)" [ngClass]="frame === activeFrame? 'active' : ''" class="dropdown-item">
-                  {{getTimeFrame(frame)}}
+                <a *ngFor="let frame of frames" (click)="pivotClick(frame)" [ngClass]="frame === getCurrentFrame()? 'active' : ''" class="dropdown-item">
+                  {{frame}}
                 </a>
               </div>
             </div>
