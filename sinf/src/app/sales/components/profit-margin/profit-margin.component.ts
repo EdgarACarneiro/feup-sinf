@@ -18,13 +18,12 @@ export class ProfitMarginComponent implements OnInit {
   }
 
   @Input('timeframe')
-  set timeframe(value) {
-    console.log(value.begin);
-    this.saft.get('GeneralAccounts/AccountID/71').subscribe(
-      (data: Array<any>) => this.revenueFromSales = data[0].ClosingCreditBalance
+  set timeframe(frame) {
+    this.saft.get(`AccountSum/71?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
+      (data: any) => this.revenueFromSales = data.totalCredit - data.totalDebit
     );
-    this.saft.get('GeneralAccounts/AccountID/61').subscribe(
-      (data: Array<any>) => this.costOfGoodsSold = data[0].ClosingDebitBalance
+    this.saft.get(`AccountSum/61?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
+      (data: any) => this.costOfGoodsSold = data.totalCredit - data.totalDebit
     );
   }
 
