@@ -9,13 +9,9 @@ import { TimeFrameService, TimeFrame } from '../../services/timeFrame/time-frame
 export class DashboardComponent implements OnInit {
 
   private frames: Array<TimeFrame>;
-  
-  private timeObj;
 
   constructor(private timeService: TimeFrameService) {
     this.frames =  Object.values(TimeFrame);
-
-    this.timeObj = this.timeService.getTimeObject();
   }
 
   ngOnInit() {
@@ -31,7 +27,5 @@ export class DashboardComponent implements OnInit {
 
   pivotClick(frame: TimeFrame) {
     this.timeService.setTimeFrame(frame);
-  
-    this.timeObj = this.timeService.getTimeObject();
   }
 }

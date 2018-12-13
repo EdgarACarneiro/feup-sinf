@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 
 @Component({
@@ -15,6 +15,11 @@ export class ProfitMarginComponent implements OnInit {
   constructor(private saft: SafTService) { }
 
   ngOnInit() {
+  }
+
+  @Input('timeframe')
+  set timeframe(value) {
+    console.log(value.begin);
     this.saft.get('GeneralAccounts/AccountID/71').subscribe(
       (data: Array<any>) => this.revenueFromSales = data[0].ClosingCreditBalance
     );

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeFrameService } from 'src/app/shared/services/timeFrame/time-frame.service';
 
 @Component({
   selector: 'app-sales',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SalesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public timeframe: TimeFrameService) { }
 
   ngOnInit() {
   }
 
+
+  // TODO: when all the kpis done delete this
   // Pie
   public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
   public pieChartData: number[] = [300, 500, 100];
