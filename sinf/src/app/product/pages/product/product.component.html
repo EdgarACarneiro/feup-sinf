@@ -9,13 +9,7 @@
 <div class="row">
   <div class="col-sm-12 col-md-4">
     <app-product-data [code]="code"></app-product-data>
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        10K
-      </div>
-    </div>
+    <app-units-sold [product]="code" [timeframe]="timeframe.getTimeObject()"></app-units-sold>
     <app-unit-in-stock [code]="code"></app-unit-in-stock>
   </div>
   <div class="col-sm-12 col-md-8">

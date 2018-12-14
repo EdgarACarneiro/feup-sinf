@@ -32,6 +32,8 @@ import { AccountsReceivableComponent } from './financial/components/accounts-rec
 import { ProductDataComponent } from './product/components/product-data/product-data.component';
 import { UnitInStockComponent } from './product/components/unit-in-stock/unit-in-stock.component';
 import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
+import { UnitsSoldComponent } from './product/components/units-sold/units-sold.component';
+import { TopSalesComponent } from './sales/components/top-sales/top-sales.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
     CashFlowComponent,
     AccountsReceivableComponent,
     ProductDataComponent,
-    UnitInStockComponent
+    UnitInStockComponent,
+    UnitsSoldComponent,
+    TopSalesComponent
   ],
   imports: [
     BrowserModule,
