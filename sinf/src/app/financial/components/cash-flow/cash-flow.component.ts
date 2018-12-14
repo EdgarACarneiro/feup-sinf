@@ -8,7 +8,7 @@ import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 })
 export class CashFlowComponent implements OnInit {
 
-  private cashFlow: string;
+  private cashFlow: number;
 
   constructor(private saft: SafTService) { }
 
@@ -18,7 +18,7 @@ export class CashFlowComponent implements OnInit {
   @Input('timeframe')
   set timeframe(frame) {
     this.saft.get(`AccountSum/11?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
-      (data: any) => this.cashFlow = (data.totalDebit - data.totalCredit).toFixed(1)
+      (data: any) => this.cashFlow = data.totalDebit - data.totalCredit
     );
   }
 

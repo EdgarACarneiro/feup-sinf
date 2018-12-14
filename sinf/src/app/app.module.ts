@@ -78,4 +78,5 @@ import { TopSalesComponent } from './sales/components/top-sales/top-sales.compon
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
