@@ -33,6 +33,9 @@ export class TopProductsComponent implements OnInit {
   }
 
   private processData(data: Array<any>) {
+    // Cleaning the products array
+    this.products = [];
+
     for (let i = 0; i < data.length && i < this.numProducts; ++i) {
       this.products.push({
         code: data[i].ProductCode,
