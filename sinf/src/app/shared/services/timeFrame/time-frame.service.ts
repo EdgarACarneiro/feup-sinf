@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 
 export enum TimeFrame {
   WholeYear = 'Whole Year',
-  FirstSemester = 'First Semester',
-  SecondSemester = 'Second Semester',
-  ThirdSemester = 'Third Semester',
-  FourthSemester = 'Fourth Semester'
+  FirstTrimester = 'First Trimester',
+  SecondTrimester = 'Second Trimester',
+  ThirdTrimester = 'Third Trimester',
+  FourthTrimester = 'Fourth Trimester'
 };
 
 @Injectable({
@@ -37,19 +37,19 @@ export class TimeFrameService {
 
   setTimeFrame(frame: TimeFrame) {
     switch (frame) {
-      case TimeFrame.FirstSemester:
+      case TimeFrame.FirstTrimester:
         this.setObject("01-01", "03-31", frame);
         break;
 
-      case TimeFrame.SecondSemester:
+      case TimeFrame.SecondTrimester:
         this.setObject("04-01", "06-30", frame);
         break;
 
-      case TimeFrame.ThirdSemester:
+      case TimeFrame.ThirdTrimester:
         this.setObject("07-01", "09-30", frame);
         break;
 
-      case TimeFrame.FourthSemester:
+      case TimeFrame.FourthTrimester:
         this.setObject("10-01", "12-31", frame);
         break;
 

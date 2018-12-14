@@ -27,7 +27,7 @@ export class WebApiRequesterComponent {
     this.getRequest().subscribe(
       (response: any) => this.data = response,
       (err: any) => {
-        if (err.status === 500)
+        if (err.status === 401)
           this.webApi.fetchToken().subscribe(
             () => this.getRequest().subscribe(
               (response: any) => this.data = response
