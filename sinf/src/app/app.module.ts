@@ -20,7 +20,7 @@ import { KpiLineChartComponent } from './shared/components/kpi-line-chart/kpi-li
 import { KpiBarChartComponent } from './shared/components/kpi-bar-chart/kpi-bar-chart.component';
 import { KpiPieChartComponent } from './shared/components/kpi-pie-chart/kpi-pie-chart.component';
 import { KpiValueComponent } from './shared/components/kpi-value/kpi-value.component';
-import { GrossNetSalesComponent } from './financial/components/gross-net-sales/gross-net-sales.component';
+import { SalesGraphComponent } from './financial/components/sales-graph/sales-graph.component';
 import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cumulative-sales.component';
 import { AcountsPayableComponent } from './procurement/components/acounts-payable/acounts-payable.component';
 import { TopSuppliersComponent } from './procurement/components/top-suppliers/top-suppliers.component';
@@ -48,7 +48,7 @@ import { TopSalesComponent } from './sales/components/top-sales/top-sales.compon
     LoginComponent,
     DashboardComponent,
     WebApiRequesterComponent,
-    GrossNetSalesComponent,
+    SalesGraphComponent,
     KpiLineChartComponent,
     KpiBarChartComponent,
     KpiPieChartComponent,

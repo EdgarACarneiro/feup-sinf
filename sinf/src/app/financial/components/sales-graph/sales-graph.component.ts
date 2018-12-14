@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 
 @Component({
-  selector: 'app-gross-net-sales',
-  templateUrl: './gross-net-sales.component.html',
-  styleUrls: ['./gross-net-sales.component.scss']
+  selector: 'app-sales-graph',
+  templateUrl: './sales-graph.component.html',
+  styleUrls: ['./sales-graph.component.scss']
 })
-export class GrossNetSalesComponent implements OnInit {
+export class SalesGraphComponent implements OnInit {
 
   /**
    * Gross values during the year (12 months);
