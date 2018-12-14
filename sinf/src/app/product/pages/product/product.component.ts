@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TimeFrameService } from 'src/app/shared/services/timeFrame/time-frame.service';
 
 @Component({
   selector: 'app-product',
@@ -10,7 +11,7 @@ export class ProductComponent implements OnInit {
 
   private code: string;
   
-  constructor(route: ActivatedRoute) {
+  constructor(route: ActivatedRoute, public timeframe: TimeFrameService) {
     this.code = route.snapshot.paramMap.get('id');
   }
 

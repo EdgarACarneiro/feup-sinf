@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 
 @Component({
@@ -8,13 +8,17 @@ import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 })
 export class AcountsPayableComponent implements OnInit {
 
-  private value: number;
+  private value: string;
 
   constructor(private SaftService: SafTService) { }
 
   ngOnInit() {
-    this.SaftService.get('GeneralAccounts/AccountID/22').subscribe(
-      (data : Array<any>) => this.value = - (data[0].ClosingDebitBalance - data[0].ClosingCreditBalance).toFixed(1)
+  }
+
+  @Input('timeframe')
+  set timeframe(frame) {
+    this.SaftService.get(`AccountSum/22?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
+      (data: any) => this.value = (data.totalCredit - data.totalDebit).toFixed(1)
     );
   }
 

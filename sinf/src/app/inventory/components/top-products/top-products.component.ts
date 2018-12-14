@@ -23,7 +23,11 @@ export class TopProductsComponent implements OnInit {
   constructor(private saft: SafTService, private router: Router) { }
 
   ngOnInit() {
-    this.saft.get('sales/top-selling-products').subscribe(
+  }
+
+  @Input('timeframe')
+  set timeframe(frame) {
+    this.saft.get(`sales/top-selling-products?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
       (data: Array<any>) => this.processData(data)
     );
   }

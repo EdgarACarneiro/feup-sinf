@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TimeFrameService } from 'src/app/shared/services/timeFrame/time-frame.service';
 
 @Component({
   selector: 'app-inventory',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InventoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public timeframe: TimeFrameService) { }
 
   ngOnInit() {
   }

@@ -47,6 +47,6 @@
           (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
       </div>
     </div>
-    <app-acounts-payable></app-acounts-payable>
+    <app-acounts-payable [timeframe]="timeframe.getTimeObject()"></app-acounts-payable>
   </div>
 </div>
