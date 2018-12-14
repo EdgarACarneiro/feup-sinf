@@ -7,7 +7,7 @@
 <!--<app-web-api-requester endpoint="Administrador/ListaEmpresas"></app-web-api-requester>-->
 <div class="row">
   <div class="col-sm-12 col-md-4">
-    <app-profit-margin></app-profit-margin>
+      <app-profit-margin [timeframe]="timeframe.getTimeObject()"></app-profit-margin>
     <app-top-products numProducts="5"></app-top-products>
   </div>
   <div class="col-sm-12 col-md-8">

@@ -37,7 +37,7 @@
     </div>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
-    <app-cash-flow></app-cash-flow>
+    <app-cash-flow [timeframe]="timeframe.getTimeObject()"></app-cash-flow>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
     <div class="kpi-container">
@@ -58,6 +58,6 @@
     </div>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
-    <app-accounts-receivable></app-accounts-receivable>
+    <app-accounts-receivable [timeframe]="timeframe.getTimeObject()"></app-accounts-receivable>
   </div>
 </div>
