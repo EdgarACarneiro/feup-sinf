@@ -23,7 +23,7 @@ export class ProfitMarginComponent implements OnInit {
       (data: any) => this.revenueFromSales = data.totalCredit - data.totalDebit
     );
     this.saft.get(`AccountSum/61?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
-      (data: any) => this.costOfGoodsSold = data.totalCredit - data.totalDebit
+      (data: any) => this.costOfGoodsSold = data.totalDebit - data.totalCredit
     );
   }
 
