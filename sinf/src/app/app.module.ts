@@ -25,15 +25,16 @@ import { CumulativeSalesComponent } from './sales/components/cumulative-sales/cu
 import { AcountsPayableComponent } from './procurement/components/acounts-payable/acounts-payable.component';
 import { TopSuppliersComponent } from './procurement/components/top-suppliers/top-suppliers.component';
 import { TopProductsComponent } from './inventory/components/top-products/top-products.component';
-import { NetSalesComponent } from './sales/components/net-sales/net-sales.component';
 import { ProfitMarginComponent } from './sales/components/profit-margin/profit-margin.component';
-import { CashFlowComponent } from './financial/components/cash-flow/cash-flow.component';
 import { AccountsReceivableComponent } from './financial/components/accounts-receivable/accounts-receivable.component';
 import { ProductDataComponent } from './product/components/product-data/product-data.component';
 import { UnitInStockComponent } from './product/components/unit-in-stock/unit-in-stock.component';
 import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
 import { UnitsSoldComponent } from './product/components/units-sold/units-sold.component';
 import { TopSalesComponent } from './sales/components/top-sales/top-sales.component';
+import { EbitComponent } from './financial/components/ebit/ebit.component';
+import { EbitdaComponent } from './financial/components/ebitda/ebitda.component';
+import { SalesPerCountryGraphComponent } from './sales/components/sales-per-country-graph/sales-per-country-graph.component';
 
 @NgModule({
   declarations: [
@@ -57,14 +58,15 @@ import { TopSalesComponent } from './sales/components/top-sales/top-sales.compon
     AcountsPayableComponent,
     TopSuppliersComponent,
     TopProductsComponent,
-    NetSalesComponent,
     ProfitMarginComponent,
-    CashFlowComponent,
     AccountsReceivableComponent,
     ProductDataComponent,
     UnitInStockComponent,
     UnitsSoldComponent,
-    TopSalesComponent
+    TopSalesComponent,
+    EbitComponent,
+    EbitdaComponent,
+    SalesPerCountryGraphComponent
   ],
   imports: [
     BrowserModule,

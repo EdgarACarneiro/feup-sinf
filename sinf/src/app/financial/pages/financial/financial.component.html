@@ -19,13 +19,11 @@
     <app-sales-graph></app-sales-graph>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
+    <app-ebit [timeframe]="timeframe.getTimeObject()"></app-ebit>
+
+  </div>
+  <div class="col-sm-12 col-md-4 mt-3">
+    <app-ebitda [timeframe]="timeframe.getTimeObject()"></app-ebitda>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
     <div class="kpi-container">
@@ -35,9 +33,6 @@
         74 %
       </div>
     </div>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <app-cash-flow [timeframe]="timeframe.getTimeObject()"></app-cash-flow>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
     <div class="kpi-container">
