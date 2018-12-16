@@ -35,6 +35,7 @@ import { TopSalesComponent } from './sales/components/top-sales/top-sales.compon
 import { EbitComponent } from './financial/components/ebit/ebit.component';
 import { EbitdaComponent } from './financial/components/ebitda/ebitda.component';
 import { SalesPerCountryGraphComponent } from './sales/components/sales-per-country-graph/sales-per-country-graph.component';
+import { PriceVariationGraphComponent } from './product/components/price-variation-graph/price-variation-graph.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { SalesPerCountryGraphComponent } from './sales/components/sales-per-coun
     TopSalesComponent,
     EbitComponent,
     EbitdaComponent,
-    SalesPerCountryGraphComponent
+    SalesPerCountryGraphComponent,
+    PriceVariationGraphComponent
   ],
   imports: [
     BrowserModule,
