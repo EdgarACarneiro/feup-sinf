@@ -26,18 +26,20 @@ export class PurchasesGraphComponent extends WebApiRequesterComponent implements
 
   ngDoCheck() {
     if (this.data !== undefined) {
-      let res = this.data.DataSet.Table[0];
+      let res = this.data.DataSet.Table;
       this.total = 0;
       
       let data = new Object;
       for (let el of res) {
-        if (data.hasOwnProperty(el.Artigo)) {
+        if (el.Artigo == null)
+          continue;
+
+        if (data.hasOwnProperty(el.Artigo))
           data[el.Artigo] += el.Quantidade;
-        } else {
+        else
           data[el.Artigo] = el.Quantidade;
-        }
         
-        this.total += el.PrecUni * el.Quantidade;
+        this.total += el.PrecUnit * el.Quantidade;
       }
 
       this.values = [{

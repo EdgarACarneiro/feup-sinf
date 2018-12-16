@@ -1,3 +1,4 @@
-<p>
-  purchases-graph works!
-</p>
+<app-kpi-value title="Total Purchases" [value]="total | currency : 'EUR'">
+</app-kpi-value>
+<app-kpi-bar-chart *ngIf="values" [data]="values" [labels]="labels" [title]="Cenas">
+</app-kpi-bar-chart>
