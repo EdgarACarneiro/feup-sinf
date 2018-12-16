@@ -18,7 +18,7 @@ export class ProductDataComponent extends WebApiRequesterComponent implements On
   }
 
   ngOnInit() {
-    this.body = `SELECT Artigo, Descricao, PCMedio as CustoMedio, PCUltimo as CustoUltimo FROM Artigo WHERE Artigo='${this.code}'`;
+    this.body = `SELECT Artigo, Descricao, PCMedio as CustoMedio, CodBarras FROM Artigo WHERE Artigo='${this.code}'`;
     this.fetchData();
   }
 

@@ -13,6 +13,8 @@ export class PriceVariationGraphComponent extends WebApiRequesterComponent imple
 
   private prices: Array<any> = null;
 
+  private labels: Array<string> = [];
+
   constructor(webApi: webApiService) {
     super(webApi, 'Administrador/Consulta', true);
   }
@@ -25,12 +27,31 @@ export class PriceVariationGraphComponent extends WebApiRequesterComponent imple
   ngDoCheck() {
     if (this.data !== undefined) {
       let res = this.data.DataSet.Table[0];
+      
+      let data = [];
+      this.addValue(data, res.PVP1);
+      this.addValue(data, res.PVP2);
+      this.addValue(data, res.PVP3);
+      this.addValue(data, res.PVP4);
+      this.addValue(data, res.PVP5);
+      this.addValue(data, res.PVP6);
+
       this.prices = [{
-        data: [res.PVP1, res.PVP2, res.PVP3, res.PVP4, res.PVP5, res.PVP6],
+        data: data,
         label: `Price variation of ${this.code}`
       }];
 
+      this.labels = [];
+      for (let i in data)
+        this.labels.push(`PRice #${i+1}`);
+
       this.resetData();
+    }
+  }
+
+  private addValue(data: Array<number>, value: number) {
+    if (value > 0) {
+      data.push(value);
     }
   }
 }
