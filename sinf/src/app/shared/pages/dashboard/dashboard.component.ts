@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TimeFrameService, TimeFrame } from '../../services/timeFrame/time-frame.service';
 import { ActivatedRoute } from '@angular/router';
+import { AuthenticationService } from 'src/app/user/services/authentication/authentication.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +12,7 @@ export class DashboardComponent implements OnInit {
 
   private frames: Array<TimeFrame>;
 
-  constructor(private timeService: TimeFrameService, private route: ActivatedRoute) {
+  constructor(private timeService: TimeFrameService, private route: ActivatedRoute, private auth: AuthenticationService) {
     this.frames =  Object.values(TimeFrame);
     
     this.timeService.setYear(this.route.snapshot.data.fiscalYear);
@@ -31,5 +32,9 @@ export class DashboardComponent implements OnInit {
 
   pivotClick(frame: TimeFrame) {
     this.timeService.setTimeFrame(frame);
+  }
+
+  logout() {
+    this.auth.logout();
   }
 }

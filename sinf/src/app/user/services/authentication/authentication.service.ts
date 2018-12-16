@@ -43,4 +43,10 @@ export class AuthenticationService {
       }
     );
   }
+
+  logout() {
+    this.authenticated = false;
+    localStorage.removeItem('primaveraToken');
+    this.router.navigateByUrl('login');
+  }
 }
