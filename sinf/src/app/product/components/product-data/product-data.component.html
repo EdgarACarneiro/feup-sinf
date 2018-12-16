@@ -11,8 +11,8 @@
       <span class="product-info">{{product.Descricao}}</span>
     </div>
     <div>
-      <span class="badge badge-primary mr-3">Bar Code</span>
-      <span class="product-info">{{product.CodBarras}} €</span>
+      <span *ngIf="product.CodBarras" class="badge badge-primary mr-3">Bar Code</span>
+      <span class="product-info">{{product.CodBarras}}</span>
     </div>
     <div>
       <span class="badge badge-primary mr-3">Suppliers</span>

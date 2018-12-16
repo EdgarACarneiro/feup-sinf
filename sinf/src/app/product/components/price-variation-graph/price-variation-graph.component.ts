@@ -43,7 +43,7 @@ export class PriceVariationGraphComponent extends WebApiRequesterComponent imple
 
       this.labels = [];
       for (let i in data)
-        this.labels.push(`PRice #${parseInt(i)+1}`);
+        this.labels.push(`Price #${parseInt(i)+1}`);
 
       this.resetData();
     }
