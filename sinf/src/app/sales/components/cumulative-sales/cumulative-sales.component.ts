@@ -11,7 +11,12 @@ export class CumulativeSalesComponent implements OnInit {
   /**
    * Cumulative Net values during the year (12 months);
    */
-  private grossResult: Array<number> = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  private cumulative: Array<number> = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+  /**
+   * Cumulative Net values during the year (12 months);
+   */
+  private monthlyGross: Array<number> = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   constructor(private saftService: SafTService) { }
 
@@ -27,16 +32,24 @@ export class CumulativeSalesComponent implements OnInit {
     );
 
     temp.map((el: any) =>
-      this.grossResult[parseInt(el.InvoiceDate.slice(5, 7)) - 1] += parseFloat(el.DocumentTotals.GrossTotal)
+      this.monthlyGross[parseInt(el.InvoiceDate.slice(5, 7)) - 1] += parseFloat(el.DocumentTotals.GrossTotal)
     );
-
-    for(let i : number = 1; i < this.grossResult.length; ++i )
-      this.grossResult[i] += this.grossResult[i-1];
+    this.cumulative[0] = this.monthlyGross[0];
+    
+    for (let i: number = 1; i < this.cumulative.length; ++i)
+       this.cumulative[i] = this.cumulative[i - 1] + this.monthlyGross[i];
   }
 
   getChartData(): Array<Object> {
     return [
-      { data: this.grossResult, label: 'Cumulative Gross Sales' }
+      { 
+        data: this.cumulative, 
+        label: 'Cumulative Gross Sales'
+      },
+      {
+        data: this.monthlyGross,
+        label: 'Monthly Gross Sales'
+      }
     ];
   }
 
