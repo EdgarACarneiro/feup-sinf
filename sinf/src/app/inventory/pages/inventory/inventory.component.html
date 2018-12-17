@@ -6,19 +6,11 @@
 -->
 
 <div class="row">
-  <div class="col-sm-12 col-md-4">
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-8">
-      <app-merchandise-delay></app-merchandise-delay>
-  </div>
-  <div class="col-sm-12 col-md-12 mt-3">
+  <div class="col-sm-12 col-md-5">
     <app-top-products [timeframe]="timeframe.getTimeObject()"></app-top-products>
+  </div>
+  <div class="col-sm-12 col-md-7">
+    <app-assets-in-stock></app-assets-in-stock>
+    <app-merchandise-delay></app-merchandise-delay>
   </div>
 </div>
