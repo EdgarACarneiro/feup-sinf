@@ -6,12 +6,12 @@
 -->
 
 <div class="row">
-  <div class="col-sm-12 col-md-4">
-    <app-acounts-payable [timeframe]="timeframe.getTimeObject()"></app-acounts-payable>
-    <app-payment-delay></app-payment-delay>
-  </div>
-  <div class="col-sm-12 col-md-8">
-    <app-top-suppliers></app-top-suppliers>
+  <div class="col-sm-12 col-md-6">
     <app-purchases-graph></app-purchases-graph>
+    <app-acounts-payable [timeframe]="timeframe.getTimeObject()"></app-acounts-payable>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <app-top-suppliers></app-top-suppliers>
+    <app-payment-delay></app-payment-delay>
   </div>
 </div>

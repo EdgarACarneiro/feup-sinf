@@ -39,6 +39,7 @@ import { PriceVariationGraphComponent } from './product/components/price-variati
 import { ProductValuesComponent } from './product/components/product-values/product-values.component';
 import { PurchasesGraphComponent } from './procurement/components/purchases-graph/purchases-graph.component';
 import { PaymentDelayComponent } from './procurement/components/payment-delay/payment-delay.component';
+import { MerchandiseDelayComponent } from './inventory/components/merchandise-delay/merchandise-delay.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { PaymentDelayComponent } from './procurement/components/payment-delay/pa
     PriceVariationGraphComponent,
     ProductValuesComponent,
     PurchasesGraphComponent,
-    PaymentDelayComponent
+    PaymentDelayComponent,
+    MerchandiseDelayComponent
   ],
   imports: [
     BrowserModule,
