@@ -31,29 +31,24 @@ export class AssetsInStockComponent extends WebApiRequesterComponent implements 
       let data = new Object;
 
       for (let el of res) {
-        if (data.hasOwnProperty(el.Artigo))
-          data[el.Artigo].quantity += el.StkArmazem;
+        if (data.hasOwnProperty(el.Armazem))
+          data[el.Armazem] += el.PVP1 * el.StkArmazem;
         else {
-          data[el.Artigo] = {
-            quantity: el.StkArmazem,
-            pvp: el.PVP1
-          };
+          data[el.Armazem] = el.StkArmazem * el.PVP1;
         }
 
         this.total += el.StkArmazem * el.PVP1;
       }
 
-      let sortedKeys = Object.keys(data).sort((a, b) =>
-        (data[b].quantity * data[b].pvp) - (data[a].quantity * data[a].pvp)
-      );
+      let sortedKeys = Object.keys(data).sort((a, b) => data[b] - data[a]);
 
       let sortedData = {};
       for (let i: number = 0; i < sortedKeys.length && i < 5; ++i)
-        sortedData[sortedKeys[i]] = (data[sortedKeys[i]].quantity * data[sortedKeys[i]].pvp);
+        sortedData[sortedKeys[i]] = Math.round(data[sortedKeys[i]]);
 
       this.values = [{
         data: Object.values(sortedData),
-        label: `Product's assets in stock`
+        label: `Wharehouses`
       }];
       this.labels = Object.keys(sortedData);
 
@@ -61,3 +56,4 @@ export class AssetsInStockComponent extends WebApiRequesterComponent implements 
     }
   }
 }
+  
