@@ -1,0 +1,23 @@
+<div class="kpi-container">
+    <h4>Top Clients</h4>
+    <p>A small very description.</p>
+    <div class="kpi-content">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">CLIENT</th>
+            <th scope="col">TOTAL SPENT</th>
+            <th scope="col">NUM PURCHASES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let client of clients">
+            <td scope="row">{{client.id}}</td>
+            <td>{{client.total | currency: 'EUR'}}</td>
+            <td>{{client.nPurchases}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

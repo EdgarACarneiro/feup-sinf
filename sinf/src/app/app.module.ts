@@ -30,8 +30,7 @@ import { AccountsReceivableComponent } from './financial/components/accounts-rec
 import { ProductDataComponent } from './product/components/product-data/product-data.component';
 import { UnitInStockComponent } from './product/components/unit-in-stock/unit-in-stock.component';
 import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
-import { UnitsSoldComponent } from './product/components/units-sold/units-sold.component';
-import { TopSalesComponent } from './sales/components/top-sales/top-sales.component';
+import { UnitsSoldComponent } from './product/components/units-sold/units-sold.component'
 import { EbitComponent } from './financial/components/ebit/ebit.component';
 import { EbitdaComponent } from './financial/components/ebitda/ebitda.component';
 import { SalesPerCountryGraphComponent } from './sales/components/sales-per-country-graph/sales-per-country-graph.component';
@@ -40,6 +39,7 @@ import { ProductValuesComponent } from './product/components/product-values/prod
 import { PurchasesGraphComponent } from './procurement/components/purchases-graph/purchases-graph.component';
 import { PaymentDelayComponent } from './procurement/components/payment-delay/payment-delay.component';
 import { MerchandiseDelayComponent } from './inventory/components/merchandise-delay/merchandise-delay.component';
+import { TopClientsComponent } from './sales/components/top-clients/top-clients.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +68,6 @@ import { MerchandiseDelayComponent } from './inventory/components/merchandise-de
     ProductDataComponent,
     UnitInStockComponent,
     UnitsSoldComponent,
-    TopSalesComponent,
     EbitComponent,
     EbitdaComponent,
     SalesPerCountryGraphComponent,
@@ -76,7 +75,8 @@ import { MerchandiseDelayComponent } from './inventory/components/merchandise-de
     ProductValuesComponent,
     PurchasesGraphComponent,
     PaymentDelayComponent,
-    MerchandiseDelayComponent
+    MerchandiseDelayComponent,
+    TopClientsComponent
   ],
   imports: [
     BrowserModule,

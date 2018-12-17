@@ -6,7 +6,7 @@
 -->
 
 <div class="row">
-  <div class="col-sm-12 col-md-4">
+  <div class="col-sm-12 col-md-5">
     <app-profit-margin [timeframe]="timeframe.getTimeObject()"></app-profit-margin>
     <div class="kpi-container">
       <h4>KPI Value</h4>
@@ -15,59 +15,10 @@
         74 %
       </div>
     </div>
-    <!-- Meter aqui top clients -->
-    <div class="kpi-container">
-      <h4>KPI Table</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">STORE</th>
-              <th scope="col">QUANTITY</th>
-              <th scope="col">AMOUNT</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">1</td>
-              <td>Downtown</td>
-              <td>12K</td>
-              <td>3M €</td>
-            </tr>
-            <tr>
-              <td scope="row">2</td>
-              <td>...</td>
-              <td>...</td>
-              <td>...</td>
-            </tr>
-            <tr>
-              <td scope="row">3</td>
-              <td>...</td>
-              <td>...</td>
-              <td>...</td>
-            </tr>
-            <tr>
-              <td scope="row">4</td>
-              <td>...</td>
-              <td>...</td>
-              <td>...</td>
-            </tr>
-            <tr>
-              <td scope="row">5</td>
-              <td>...</td>
-              <td>...</td>
-              <td>...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <app-top-clients [timeframe]="timeframe.getTimeObject()"></app-top-clients>
   </div>
-  <div class="col-sm-12 col-md-8">
+  <div class="col-sm-12 col-md-7">
     <app-cumulative-sales></app-cumulative-sales>
     <app-sales-per-country-graph [timeframe]="timeframe.getTimeObject()"></app-sales-per-country-graph>
-    <app-top-sales [timeframe]="timeframe.getTimeObject()"></app-top-sales>
   </div>
 </div>
