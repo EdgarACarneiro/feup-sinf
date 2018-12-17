@@ -43,10 +43,10 @@ export class PurchasesGraphComponent extends WebApiRequesterComponent implements
       }
 
       this.values = [{
-        data: Object.values(data),
-        label: `Quantities purchased`
+        data: Object.values(data).filter(val => val > 15),
+        label: 'Quantities purchased ( >10 purchases)'
       }];
-      this.labels = Object.keys(data);
+      this.labels = Object.keys(data).filter(key => data[key] > 10);
 
       this.resetData();
     }
