@@ -8,28 +8,7 @@
 <div class="row">
   <div class="col-sm-12 col-md-4">
     <app-acounts-payable [timeframe]="timeframe.getTimeObject()"></app-acounts-payable>
-    <div class="kpi-container">
-      <h4>KPI Graph</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
-          (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
+    <app-payment-delay></app-payment-delay>
   </div>
   <div class="col-sm-12 col-md-8">
     <app-top-suppliers></app-top-suppliers>
