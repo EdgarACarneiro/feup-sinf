@@ -41,6 +41,7 @@ import { MerchandiseDelayComponent } from './inventory/components/merchandise-de
 import { TopClientsComponent } from './sales/components/top-clients/top-clients.component';
 import { BalanceSheetComponent } from './financial/components/balance-sheet/balance-sheet.component';
 import { AssetsInStockComponent } from './inventory/components/assets-in-stock/assets-in-stock.component';
+import { ClientInfoComponent } from './client/components/client-info/client-info.component';
 
 @NgModule({
   declarations: [
@@ -77,8 +78,9 @@ import { AssetsInStockComponent } from './inventory/components/assets-in-stock/a
     PurchasesGraphComponent,
     MerchandiseDelayComponent,
     TopClientsComponent,
-    BalanceSheetComponent,
-    AssetsInStockComponent
+    AssetsInStockComponent,
+    ClientInfoComponent,
+    BalanceSheetComponent
   ],
   imports: [
     BrowserModule,
