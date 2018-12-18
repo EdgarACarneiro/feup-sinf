@@ -40,6 +40,7 @@ import { PurchasesGraphComponent } from './procurement/components/purchases-grap
 import { PaymentDelayComponent } from './procurement/components/payment-delay/payment-delay.component';
 import { MerchandiseDelayComponent } from './inventory/components/merchandise-delay/merchandise-delay.component';
 import { TopClientsComponent } from './sales/components/top-clients/top-clients.component';
+import { BalanceSheetComponent } from './financial/components/balance-sheet/balance-sheet.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +77,8 @@ import { TopClientsComponent } from './sales/components/top-clients/top-clients.
     PurchasesGraphComponent,
     PaymentDelayComponent,
     MerchandiseDelayComponent,
-    TopClientsComponent
+    TopClientsComponent,
+    BalanceSheetComponent
   ],
   imports: [
     BrowserModule,
