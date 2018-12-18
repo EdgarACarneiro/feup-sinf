@@ -5,18 +5,11 @@
 </nav>
 -->
 <div class="row">
-  <div class="col-sm-12 col-md-6">
-    <div class="kpi-container">
-      <h4>KPI Graph</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content">
-        <canvas baseChart [data]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [chartType]="lineChartType"
-          (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-6">
+  <div class="col-sm-12 col-md-7">
     <app-sales-graph></app-sales-graph>
+  </div>
+  <div class="col-sm-12 col-md-5">
+    <app-balance-sheet></app-balance-sheet>
   </div>
   <div class="col-sm-12 col-md-4 mt-3">
     <app-ebit [timeframe]="timeframe.getTimeObject()"></app-ebit>

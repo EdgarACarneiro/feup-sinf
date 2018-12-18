@@ -1,3 +1,27 @@
-<p>
-  balance-sheet works!
-</p>
+<div class="kpi-container">
+  <h4>Balance Sheet</h4>
+  <p>A small very description.</p>
+  <div class="kpi-content">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Account ID</th>
+          <th scope="col">Assets</th>
+          <th scope="col">Liabilities & Shareholder's Equity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of accounts">
+          <td scope="row">{{account.id}}</td>
+          <td>{{account.debit}}</td>
+          <td>{{account.credit}}</td>
+        </tr>
+        <tr>
+          <td scope="row">TOTAL</td>
+          <td>{{totalDebit}}</td>
+          <td>{{totalCredit}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
