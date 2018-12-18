@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-clients',
@@ -18,7 +19,7 @@ export class TopClientsComponent implements OnInit {
    */
   private clients: Object[] = [];
 
-  constructor(private saft: SafTService) { }
+  constructor(private saft: SafTService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -41,5 +42,9 @@ export class TopClientsComponent implements OnInit {
         nPurchases: data[i].nPurchases
       });
     }
+  }
+
+  private clickConsumer(id: string) {
+    this.router.navigate([`/consumer/${id}`]);
   }
 }

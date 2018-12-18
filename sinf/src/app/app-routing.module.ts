@@ -47,7 +47,7 @@ const routes: Routes = [
         component: ProductComponent
       },
       {
-        path: 'client/:id',
+        path: 'consumer/:id',
         component: ClientComponent
       }
     ]
