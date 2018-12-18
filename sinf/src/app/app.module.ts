@@ -37,10 +37,10 @@ import { SalesPerCountryGraphComponent } from './sales/components/sales-per-coun
 import { PriceVariationGraphComponent } from './product/components/price-variation-graph/price-variation-graph.component';
 import { ProductValuesComponent } from './product/components/product-values/product-values.component';
 import { PurchasesGraphComponent } from './procurement/components/purchases-graph/purchases-graph.component';
-import { PaymentDelayComponent } from './procurement/components/payment-delay/payment-delay.component';
 import { MerchandiseDelayComponent } from './inventory/components/merchandise-delay/merchandise-delay.component';
 import { TopClientsComponent } from './sales/components/top-clients/top-clients.component';
 import { BalanceSheetComponent } from './financial/components/balance-sheet/balance-sheet.component';
+import { AssetsInStockComponent } from './inventory/components/assets-in-stock/assets-in-stock.component';
 
 @NgModule({
   declarations: [
@@ -75,10 +75,10 @@ import { BalanceSheetComponent } from './financial/components/balance-sheet/bala
     PriceVariationGraphComponent,
     ProductValuesComponent,
     PurchasesGraphComponent,
-    PaymentDelayComponent,
     MerchandiseDelayComponent,
     TopClientsComponent,
-    BalanceSheetComponent
+    BalanceSheetComponent,
+    AssetsInStockComponent
   ],
   imports: [
     BrowserModule,

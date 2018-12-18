@@ -15,7 +15,8 @@ export class MerchandiseDelayComponent extends WebApiRequesterComponent implemen
 
   constructor(webApi: webApiService) {
     super(webApi, 'Administrador/Consulta', true,
-      "SELECT DATEDIFF(DAY, C.DataEntrega, GETDATE()) AS Atraso, count(*) as Total FROM CabecCompras AS A JOIN CabecComprasStatus AS B ON A.Id = B.IdCabecCompras JOIN LinhasCompras AS C ON A.Id = C.IdCabecCompras WHERE A.TipoDoc = 'ECF' AND B.Estado = 'P' AND A.TotalMerc > 0 AND C.Artigo != 'NULL' GROUP BY DATEDIFF(DAY, C.DataEntrega, GETDATE())");
+      "SELECT DATEDIFF(DAY, C.DataEntrega, GETDATE()) AS Atraso, count(*) as Total FROM CabecCompras AS A JOIN CabecComprasStatus AS B ON A.Id = B.IdCabecCompras JOIN LinhasCompras AS C ON A.Id = C.IdCabecCompras WHERE A.TipoDoc = 'ECF' AND B.Estado = 'P' AND A.TotalMerc > 0 AND C.Artigo != 'NULL' GROUP BY DATEDIFF(DAY, C.DataEntrega, GETDATE())"
+    );
 
     this.boundaries = [
       {
@@ -48,7 +49,7 @@ export class MerchandiseDelayComponent extends WebApiRequesterComponent implemen
     if (this.data !== undefined) {
       let res = this.data.DataSet.Table;
       this.values = [0, 0, 0, 0, 0];
-      
+
       for (let el of res) {
         for (let i in this.boundaries) {
           if (this.boundaries[i].begin <= el.Atraso && el.Atraso <= this.boundaries[i].end) {
