@@ -39,6 +39,7 @@ import { ProductValuesComponent } from './product/components/product-values/prod
 import { PurchasesGraphComponent } from './procurement/components/purchases-graph/purchases-graph.component';
 import { MerchandiseDelayComponent } from './inventory/components/merchandise-delay/merchandise-delay.component';
 import { TopClientsComponent } from './sales/components/top-clients/top-clients.component';
+import { BalanceSheetComponent } from './financial/components/balance-sheet/balance-sheet.component';
 import { AssetsInStockComponent } from './inventory/components/assets-in-stock/assets-in-stock.component';
 import { ClientInfoComponent } from './client/components/client-info/client-info.component';
 
@@ -78,7 +79,8 @@ import { ClientInfoComponent } from './client/components/client-info/client-info
     MerchandiseDelayComponent,
     TopClientsComponent,
     AssetsInStockComponent,
-    ClientInfoComponent
+    ClientInfoComponent,
+    BalanceSheetComponent
   ],
   imports: [
     BrowserModule,
