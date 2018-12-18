@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-kpi-pie-chart',
@@ -17,6 +17,8 @@ export class KpiPieChartComponent implements OnInit {
   @Input() private labels: string[];
 
   @Input() private title: string;
+
+  @Output() click: EventEmitter<any> = new EventEmitter();
 
   public options: any = {
     scaleShowVerticalLines: false,
@@ -40,7 +42,8 @@ export class KpiPieChartComponent implements OnInit {
 
   // events
   public chartClicked(e: any): void {
-    console.log(e);
+    if (e.active[0] != undefined)
+     this.click.emit(this.labels[e.active[0]._index]);
   }
 
   public chartHovered(e: any): void {

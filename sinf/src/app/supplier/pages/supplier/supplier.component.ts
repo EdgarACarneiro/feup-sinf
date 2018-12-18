@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { TimeFrameService } from 'src/app/shared/services/timeFrame/time-frame.service';
 
 @Component({
   selector: 'app-supplier',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SupplierComponent implements OnInit {
 
-  constructor() { }
+  private name: string;
+
+  constructor(route: ActivatedRoute, public timeframe: TimeFrameService) {
+    this.name = route.snapshot.paramMap.get('id');
+  }
 
   ngOnInit() {
   }

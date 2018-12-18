@@ -1,6 +1,7 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { WebApiRequesterComponent } from 'src/app/shared/components/web-api-requester/web-api-requester.component';
 import { webApiService } from 'src/app/shared/services/webApi/web-api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-suppliers',
@@ -13,7 +14,7 @@ export class TopSuppliersComponent extends WebApiRequesterComponent implements O
 
   public labels: string[] = [];
 
-  constructor(webApi: webApiService) {
+  constructor(webApi: webApiService, private router: Router) {
     super(webApi, 'Administrador/Consulta', true,
       "SELECT TOP 1000 Fornecedor, Nome, Morada, CpLoc, Tel, TotalDeb FROM V_Fornecedores");
   }
@@ -38,5 +39,9 @@ export class TopSuppliersComponent extends WebApiRequesterComponent implements O
 
       this.resetData();
     }
+  }
+
+  onClick(supplier: string) {
+    this.router.navigate([`/supplier/${supplier}`]);
   }
 }
