@@ -12,6 +12,7 @@ import { DashboardComponent } from './shared/pages/dashboard/dashboard.component
 import { AuthGuard } from './user/services/authGuard/auth.guard';
 import { UnauthGuard } from './user/services/unauthGuard/unauth.guard';
 import { FiscalYearService } from './shared/resolvers/fiscal-year.service';
+import { SupplierComponent } from './supplier/pages/supplier/supplier.component';
 
 const routes: Routes = [
   {
@@ -49,6 +50,10 @@ const routes: Routes = [
       {
         path: 'consumer/:id',
         component: ClientComponent
+      },
+      {
+        path: 'supplier/:id',
+        component: SupplierComponent
       }
     ]
   },
