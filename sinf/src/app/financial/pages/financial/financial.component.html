@@ -7,45 +7,11 @@
 <div class="row">
   <div class="col-sm-12 col-md-7">
     <app-sales-graph></app-sales-graph>
+    <app-ebit [timeframe]="timeframe.getTimeObject()"></app-ebit>
+    <app-ebitda [timeframe]="timeframe.getTimeObject()"></app-ebitda>
+    <app-accounts-receivable [timeframe]="timeframe.getTimeObject()"></app-accounts-receivable>
   </div>
   <div class="col-sm-12 col-md-5">
     <app-balance-sheet></app-balance-sheet>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <app-ebit [timeframe]="timeframe.getTimeObject()"></app-ebit>
-
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <app-ebitda [timeframe]="timeframe.getTimeObject()"></app-ebitda>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <div class="kpi-container">
-      <h4>KPI Value</h4>
-      <p>A small very description.</p>
-      <div class="kpi-content d-flex justify-content-center kpi-value">
-        74 %
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-12 col-md-4 mt-3">
-    <app-accounts-receivable [timeframe]="timeframe.getTimeObject()"></app-accounts-receivable>
   </div>
 </div>
