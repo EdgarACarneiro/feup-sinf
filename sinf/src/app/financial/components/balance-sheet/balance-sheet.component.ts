@@ -25,6 +25,7 @@ export class BalanceSheetComponent implements OnInit {
     ["22", "Contas a Pagar a Fornecedores"],
     ["24", "Estado e Outros Entes Públicos"],
     ["31", "Compras"],
+    ["32", "Mercadorias em Armazém / Trânsito"],
     ["36", "Produtos e Trabalhos em Curso"],
     ["61", "Custo das Mercadorias Vendidas"],
     ["62", "Fornecimentos e Serviços Externos"],
@@ -40,18 +41,18 @@ export class BalanceSheetComponent implements OnInit {
       this.saft.get('AccountSum/' + i.toString()).subscribe(
         (data: Object) => {
           let id = i.toString()
-          if (data['totalDebit'] != 0 || data['totalCredit'] != 0) {
+          let accountSum = data['totalDebit'] - data['totalCredit'];
+          if (accountSum != 0) {
             this.accounts.push({
-              id: this.accountNames.has(id) ? this.accountNames.get(id) : id,
-              debit: data['totalDebit'],
-              credit: data['totalCredit']
+              id: id,
+              name: this.accountNames.has(id) ? this.accountNames.get(id) : ' - ',
+              debit: accountSum > 0 ? accountSum : 0,
+              credit: accountSum < 0 ? -accountSum : 0
             })
   
             this.totalDebit += data['totalDebit']
             this.totalCredit += data['totalCredit']
           }
-
-          console.log(this.accounts);
         }
       );
     }
