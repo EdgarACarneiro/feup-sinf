@@ -51,12 +51,12 @@
       <span class="product-info">{{client.NomeFiscal}}</span>
     </div>
     <div>
-      <span class="badge badge-primary mr-3">Fiscal Name</span>
-      <span class="product-info">{{client.NomeFiscal}}</span>
+      <span class="badge badge-primary mr-3">Fiscal Number</span>
+      <span class="product-info">{{client.NumContrib}}</span>
     </div>
     <div>
       <span class="badge badge-primary mr-3">Credit Limit</span>
-      <span class="product-info">{{client.LimiteCred}}</span>
+      <span class="product-info">{{client.LimiteCred |  currency: 'EUR'}}</span>
     </div>
     <div>
       <span class="badge badge-primary mr-3">Current Situation</span>

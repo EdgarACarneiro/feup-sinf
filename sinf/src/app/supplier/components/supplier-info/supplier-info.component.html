@@ -50,15 +50,14 @@
       <span class="product-info">{{supplier.NumContrib}}</span>
     </div>
     <div>
-      <span class="badge badge-primary mr-3">Total Debit</span>
-      <span class="product-info">{{supplier.TotalDeb}}</span>
-    </div>
-    <div>
       <span class="badge badge-primary mr-3">Payment Method</span>
       <span class="product-info">{{supplier.ModoPag}}</span>
     </div>
   </div>
 </div>
+<div class="m-kpi">
+    <app-kpi-value title="Total Purchased from Supplier" [value]="supplier.TotalDeb | currency : 'EUR'"></app-kpi-value>
+  </div>
 <div class="m-kpi">
   <app-kpi-value title="Pending Purchases Value" [value]="supplier.EncomendasPendentes | currency : 'EUR'"></app-kpi-value>
 </div>
