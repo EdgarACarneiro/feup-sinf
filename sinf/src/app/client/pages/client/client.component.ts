@@ -9,10 +9,13 @@ import { TimeFrameService } from 'src/app/shared/services/timeFrame/time-frame.s
 })
 export class ClientComponent implements OnInit {
 
+  private nif: string;
+
   private id: string;
   
   constructor(route: ActivatedRoute, public timeframe: TimeFrameService) {
-    this.id = route.snapshot.paramMap.get('id').slice(2, 11); // NIF size
+    this.id = route.snapshot.paramMap.get('id');
+    this.nif = this.id.slice(2, 11); // NIF size
   }
 
   ngOnInit() {

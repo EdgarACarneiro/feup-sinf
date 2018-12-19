@@ -3,13 +3,15 @@ import { SafTService } from 'src/app/shared/services/safT/saf-t.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-top-products',
-  templateUrl: './top-products.component.html',
-  styleUrls: ['../../pages/inventory/inventory.component.scss']
+  selector: 'app-top-purchases',
+  templateUrl: './top-purchases.component.html',
+  styleUrls: ['./top-purchases.component.scss']
 })
-export class TopProductsComponent implements OnInit {
+export class TopPurchasesComponent implements OnInit {
 
-  @Input() numProducts: number = 15;
+  @Input() id: string;
+
+  @Input() numProducts: number = 10;
 
   /**
    * Properties of each top product:
@@ -26,21 +28,21 @@ export class TopProductsComponent implements OnInit {
 
   @Input('timeframe')
   set timeframe(frame) {
-    this.saft.get(`sales/top-selling-products?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
-      (data: Array<any>) => this.processData(data)
+    this.saft.get(`sales/top-purchases/${this.id}?start-date=${frame.begin}&end-date=${frame.end}`).subscribe(
+      (data: any) => this.processData(data.products)
     );
   }
 
   private processData(data: Array<any>) {
     // Cleaning the products array
     this.products = [];
+    console.log(data);
 
     for (let i = 0; i < data.length && i < this.numProducts; ++i) {
       this.products.push({
         code: data[i].ProductCode,
         name: data[i].ProductDescription,
-        unitSold: data[i].Quantity,
-        price: Math.round(data[i].UnitPrice)
+        unitSold: data[i].Quantity
       });
     }
   }

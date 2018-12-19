@@ -44,6 +44,7 @@ import { AssetsInStockComponent } from './inventory/components/assets-in-stock/a
 import { ClientInfoComponent } from './client/components/client-info/client-info.component';
 import { SupplierComponent } from './supplier/pages/supplier/supplier.component';
 import { SupplierInfoComponent } from './supplier/components/supplier-info/supplier-info.component';
+import { TopPurchasesComponent } from './client/components/top-purchases/top-purchases.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { SupplierInfoComponent } from './supplier/components/supplier-info/suppl
     ClientInfoComponent,
     BalanceSheetComponent,
     SupplierComponent,
-    SupplierInfoComponent
+    SupplierInfoComponent,
+    TopPurchasesComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,9 @@
 
 <div class="row">
   <div class="col-sm-12 col-md-6">
-    <app-client-info [id]="id"></app-client-info>
+    <app-client-info [id]="nif"></app-client-info>
   </div>
   <div class="col-sm-12 col-md-6">
-    
+    <app-top-purchases [id]="id" [timeframe]="timeframe.getTimeObject()"></app-top-purchases>
   </div>
 </div>
