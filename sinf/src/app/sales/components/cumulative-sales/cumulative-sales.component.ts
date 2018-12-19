@@ -44,11 +44,11 @@ export class CumulativeSalesComponent implements OnInit {
     return [
       { 
         data: this.cumulative, 
-        label: 'Cumulative Gross Sales'
+        label: 'Cumulative Sales'
       },
       {
         data: this.monthlyGross,
-        label: 'Monthly Gross Sales'
+        label: 'Monthly Sales'
       }
     ];
   }
