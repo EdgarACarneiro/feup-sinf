@@ -18,7 +18,7 @@ export class KpiPieChartComponent implements OnInit {
 
   @Input() private title: string;
 
-  @Output() click: EventEmitter<any> = new EventEmitter();
+  @Output() pieClick: EventEmitter<any> = new EventEmitter();
 
   public options: any = {
     scaleShowVerticalLines: false,
@@ -42,8 +42,8 @@ export class KpiPieChartComponent implements OnInit {
 
   // events
   public chartClicked(e: any): void {
-    if (e.active[0] != undefined)
-     this.click.emit(this.labels[e.active[0]._index]);
+    if (e.active[0] !== undefined)
+     this.pieClick.emit(this.labels[e.active[0]._index]);
   }
 
   public chartHovered(e: any): void {

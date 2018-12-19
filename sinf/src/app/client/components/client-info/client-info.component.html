@@ -12,7 +12,7 @@
       <span class="product-info">{{client.Cliente}}</span>
     </div>
     <div>
-      <span *ngIf="client.CodBarras" class="badge badge-primary mr-3">Name</span>
+      <span class="badge badge-primary mr-3">Name</span>
       <span class="product-info">{{client.Nome}}</span>
     </div>
     <hr>
@@ -42,10 +42,14 @@
       <span class="product-info">{{client.Fac_Fax}}</span>
     </div>
     <div>
-        <span class="badge badge-primary mr-3">E-mail</span>
-        <span class="product-info">{{client.EnderecoWeb}}</span>
-      </div>
+      <span class="badge badge-primary mr-3">E-mail</span>
+      <span class="product-info">{{client.EnderecoWeb}}</span>
+    </div>
     <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Fiscal Name</span>
+      <span class="product-info">{{client.NomeFiscal}}</span>
+    </div>
     <div>
       <span class="badge badge-primary mr-3">Fiscal Name</span>
       <span class="product-info">{{client.NomeFiscal}}</span>

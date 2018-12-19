@@ -43,6 +43,7 @@ import { BalanceSheetComponent } from './financial/components/balance-sheet/bala
 import { AssetsInStockComponent } from './inventory/components/assets-in-stock/assets-in-stock.component';
 import { ClientInfoComponent } from './client/components/client-info/client-info.component';
 import { SupplierComponent } from './supplier/pages/supplier/supplier.component';
+import { SupplierInfoComponent } from './supplier/components/supplier-info/supplier-info.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { SupplierComponent } from './supplier/pages/supplier/supplier.component'
     AssetsInStockComponent,
     ClientInfoComponent,
     BalanceSheetComponent,
-    SupplierComponent
+    SupplierComponent,
+    SupplierInfoComponent
   ],
   imports: [
     BrowserModule,
