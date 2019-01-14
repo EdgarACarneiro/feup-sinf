@@ -1,0 +1,123 @@
+@import '~src/styles';
+/*
+* HEADER STYLE
+*/
+
+.navbar {
+    background: white !important;
+    border-bottom: 1px solid #e7e7e7;
+    h4 {
+        color: $gray-600;
+        font-size: 1.2em;
+        margin: auto 3em auto 1em;
+    }
+    .btn-light {
+        font-size: 1.5em;
+    }
+    .navbar-nav {
+        li:first-child {
+            margin-right: 2em;
+        }
+        li:last-child {
+            margin-right: 1em;
+        }
+    }
+    .btn-primary {
+        font-size: 0.8em;
+        span {
+            font-size: 1.3em;
+            margin-right: 0.6em;
+        }
+    }
+}
+
+/*
+* SIDEBAR STYLE
+*/
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: linear-gradient($light-red, $strong-red);
+    color: white;
+    transition: all 0.3s;
+    &.active {
+        margin-left: -250px;
+    }
+    .sidebar-header {
+        padding: 1em 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4em;
+            text-transform: uppercase;
+            margin: auto 0 auto 0.5em;
+        }
+    }
+    .lnr {
+        font-size: 1.7em;
+    }
+    .dash-link {
+        background-color: inherit;
+        color: white;
+        margin: 0.3em 1em;
+        padding: 1.2em 2em;
+        font-size: 0.8em;
+        font-weight: 500;
+        &:hover {
+            background: rgba(255, 255, 255, .13);
+            opacity: 1;
+        }
+        &.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.dropdown-menu {
+    & > a.active {
+        color: white;
+    }
+}
+
+/*
+* CONTENT STYLE
+*/
+
+#content {
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s;
+    background-color: $gray-100;
+    overflow-y: scroll;
+}
+
+/*
+* MEDIAQUERIES
+*/
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        h4 {
+            display: none;
+        }
+        .navbar-nav {
+            li:first-child {
+                margin-right: 0;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    #sidebar {
+        margin-left: -250px;
+        &.active {
+            margin-left: 0;
+        }
+    }
+}

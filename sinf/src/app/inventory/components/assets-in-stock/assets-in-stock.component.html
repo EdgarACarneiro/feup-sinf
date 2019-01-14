@@ -1,0 +1,6 @@
+<app-kpi-bar-chart *ngIf="values" title="Assets value in Top 5 Wharehouses" [data]="values" [labels]="labels">
+</app-kpi-bar-chart>
+<div class="m-kpi">
+  <app-kpi-value title="Total Assets in Stock" [value]="total | currency : 'EUR'">
+  </app-kpi-value>
+</div>

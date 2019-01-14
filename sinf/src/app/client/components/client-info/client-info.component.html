@@ -1,0 +1,66 @@
+<div class="kpi-container">
+  <h4>Consumer Information</h4>
+  <p>Detailed information regarding {{client.Cliente}}.</p>
+  <div class="kpi-content">
+    <div>
+      <span class="badge badge-primary mr-3">ID</span>
+      <span class="product-info">{{id}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Client</span>
+      <span class="product-info">{{client.Cliente}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Name</span>
+      <span class="product-info">{{client.Nome}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Address</span>
+      <span class="product-info">{{client.Fac_Mor}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">City</span>
+      <span class="product-info">{{client.Fac_Local}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Country</span>
+      <span class="product-info">{{client.Pais}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Postal Code</span>
+      <span class="product-info">{{client.Fac_Cp}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Telephone Number</span>
+      <span class="product-info">{{client.Fac_Tel}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Fax Number</span>
+      <span class="product-info">{{client.Fac_Fax}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">E-mail</span>
+      <span class="product-info">{{client.EnderecoWeb}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Fiscal Name</span>
+      <span class="product-info">{{client.NomeFiscal}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Fiscal Number</span>
+      <span class="product-info">{{client.NumContrib}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Credit Limit</span>
+      <span class="product-info">{{client.LimiteCred |  currency: 'EUR'}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Current Situation</span>
+      <span class="product-info">{{client.Situacao}}</span>
+    </div>
+  </div>
+</div>

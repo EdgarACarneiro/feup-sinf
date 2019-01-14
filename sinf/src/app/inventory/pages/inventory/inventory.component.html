@@ -1,0 +1,16 @@
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Inventory</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-5">
+    <app-top-products [timeframe]="timeframe.getTimeObject()"></app-top-products>
+  </div>
+  <div class="col-sm-12 col-md-7">
+    <app-assets-in-stock></app-assets-in-stock>
+    <app-merchandise-delay></app-merchandise-delay>
+  </div>
+</div>

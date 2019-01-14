@@ -1,0 +1,21 @@
+<div class="kpi-container">
+  <h4>Top Bought Products</h4>
+  <div class="kpi-content">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">CODE</th>
+          <th scope="col">NAME</th>
+          <th scope="col">SOLD UNITS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products" (click)="clickProduct(product.code)">
+          <td scope="row">{{product.code}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.unitSold}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

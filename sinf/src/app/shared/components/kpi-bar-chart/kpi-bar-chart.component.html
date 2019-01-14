@@ -1,0 +1,13 @@
+<div class="kpi-container">
+  <h4>{{title}}</h4>
+  <div class="kpi-content">
+    <canvas baseChart
+    [datasets]="data"
+    [labels]="labels"
+    [options]="options"
+    [colors]="colors"
+    [chartType]="type"
+    (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

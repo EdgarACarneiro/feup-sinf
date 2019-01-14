@@ -1,0 +1,17 @@
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Sales</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-5">
+    <app-profit-margin [timeframe]="timeframe.getTimeObject()"></app-profit-margin>
+    <app-top-clients [timeframe]="timeframe.getTimeObject()"></app-top-clients>
+  </div>
+  <div class="col-sm-12 col-md-7">
+    <app-cumulative-sales></app-cumulative-sales>
+    <app-sales-per-country-graph [timeframe]="timeframe.getTimeObject()"></app-sales-per-country-graph>
+  </div>
+</div>

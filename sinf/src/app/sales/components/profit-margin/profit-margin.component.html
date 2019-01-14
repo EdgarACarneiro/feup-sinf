@@ -1,0 +1,10 @@
+<app-kpi-value title="Gross Profit Margin" [value]="((revenueFromSales - costOfGoodsSold) / revenueFromSales) | percent: '1.1-1'">
+</app-kpi-value>
+<div class="m-kpi">
+  <app-kpi-value title="Revenue from Sales" [value]="revenueFromSales | currency: 'EUR'">
+  </app-kpi-value>
+</div>
+<div class="m-kpi">
+  <app-kpi-value title="Cost of Goods Sold" [value]="costOfGoodsSold | currency: 'EUR'">
+  </app-kpi-value>
+</div>

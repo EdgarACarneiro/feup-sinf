@@ -1,0 +1,17 @@
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Financial</span>
+</nav>
+-->
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <app-sales-graph></app-sales-graph>
+    <app-ebit [timeframe]="timeframe.getTimeObject()"></app-ebit>
+    <app-ebitda [timeframe]="timeframe.getTimeObject()"></app-ebitda>
+    <app-accounts-receivable [timeframe]="timeframe.getTimeObject()"></app-accounts-receivable>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <app-balance-sheet></app-balance-sheet>
+  </div>
+</div>

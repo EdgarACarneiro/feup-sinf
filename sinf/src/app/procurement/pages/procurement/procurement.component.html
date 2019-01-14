@@ -1,0 +1,16 @@
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <span class="breadcrumb-item active">Procurement</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <app-purchases-graph></app-purchases-graph>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <app-top-suppliers></app-top-suppliers>
+    <app-acounts-payable [timeframe]="timeframe.getTimeObject()"></app-acounts-payable>
+  </div>
+</div>

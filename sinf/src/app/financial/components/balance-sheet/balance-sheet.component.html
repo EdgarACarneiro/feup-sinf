@@ -1,0 +1,29 @@
+<div class="kpi-container">
+  <h4>Balance Sheet</h4>
+  <div class="kpi-content">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Account</th>
+          <th scope="col">Description</th>
+          <th scope="col">Debit</th>
+          <th scope="col">Credit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of accounts">
+          <td scope="row">{{account.id}}</td>
+          <td>{{account.name}}</td>
+          <td>{{account.debit | currency: 'EUR'}}</td>
+          <td>{{account.credit | currency: 'EUR'}}</td>
+        </tr>
+        <tr>
+          <td scope="row"> - </td>
+          <td>TOTAL</td>
+          <td>{{totalDebit | currency: 'EUR'}}</td>
+          <td>{{totalCredit | currency: 'EUR'}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

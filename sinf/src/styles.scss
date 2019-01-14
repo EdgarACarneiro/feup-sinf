@@ -1,0 +1,97 @@
+/*
+* OVERRIDE BOOTSTRAP VARIABLES
+*/
+
+$theme-colors: (
+    "primary": #FB404B,
+    "secondary": #777777,
+    "info": rgb(64, 114, 251)
+);
+
+$font-family-heading: "Montserrat", sans-serif;
+$font-family-base: Roboto, "Helvetica Neue", Arial, sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+/*
+* VARIABLES
+*/
+
+$light-red: #FB404B;
+$strong-red: #BB0502;
+/*
+* GLOBAL STYLES
+*/
+
+html,
+body {
+    height: 100%;
+    font-family: $font-family-base;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding: 1.2em 1.8em;
+}
+
+.btn-light {
+    background-color: transparent;
+    color: $gray-600;
+    border: none;
+    &:hover,
+    &:active {
+        background-color: $gray-100 !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+/*
+* KPI'S STYLES
+*/
+
+div[class^='col-'] {
+    &> :not(:first-child) .kpi-container {
+        margin-top: 1em;
+    }
+    &>div:not(:first-child).kpi-container {
+        margin-top: 1em;
+    } //delete in the future
+    &:not(:first-child) {
+        @include media-breakpoint-down(sm) {
+            margin-top: 1em;
+        }
+    }
+}
+
+.kpi-container {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid rgba($color: black, $alpha: 0.1);
+    border-radius: 0.25em;
+    h4 {
+        font-weight: 100;
+        margin: 0;
+    }
+    >p {
+        font-size: 0.8em;
+        color: $gray-600;
+    }
+    .kpi-content {
+        &.kpi-value {
+            font-size: 2em;
+        }
+        .table {
+            th {
+                font-weight: 100;
+                color: $gray-600;
+                font-size: 0.8em;
+                border-top: none;
+            }
+            td {
+                font-size: 0.9em;
+            }
+        }
+    }
+}

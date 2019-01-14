@@ -1,0 +1,63 @@
+<div class="kpi-container">
+  <h4>Supplier Information</h4>
+  <p>Detailed information regarding {{name}}.</p>
+  <div class="kpi-content">
+    <div>
+      <span class="badge badge-primary mr-3">Supplier</span>
+      <span class="product-info">{{supplier.Fornecedor}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Name</span>
+      <span class="product-info">{{supplier.Nome}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Address</span>
+      <span class="product-info">{{supplier.Morada}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">City</span>
+      <span class="product-info">{{supplier.CpLoc}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Country</span>
+      <span class="product-info">{{supplier.Pais}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Postal Code</span>
+      <span class="product-info">{{supplier.Cp}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Telephone Number</span>
+      <span class="product-info">{{supplier.Tel}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Fax Number</span>
+      <span class="product-info">{{supplier.Fax}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">E-mail</span>
+      <span class="product-info">{{supplier.EnderecoWeb}}</span>
+    </div>
+    <hr>
+    <div>
+      <span class="badge badge-primary mr-3">Fiscal Name</span>
+      <span class="product-info">{{supplier.NomeFiscal}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Fiscal Number</span>
+      <span class="product-info">{{supplier.NumContrib}}</span>
+    </div>
+    <div>
+      <span class="badge badge-primary mr-3">Payment Method</span>
+      <span class="product-info">{{supplier.ModoPag}}</span>
+    </div>
+  </div>
+</div>
+<div class="m-kpi">
+    <app-kpi-value title="Total Purchased from Supplier" [value]="supplier.TotalDeb | currency : 'EUR'"></app-kpi-value>
+  </div>
+<div class="m-kpi">
+  <app-kpi-value title="Pending Purchases Value" [value]="supplier.EncomendasPendentes | currency : 'EUR'"></app-kpi-value>
+</div>

@@ -1,0 +1,25 @@
+<!-- Breadcrumbs
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" href="#">Dashboard</a>
+  <a class="breadcrumb-item">Product</a>
+  <span class="breadcrumb-item active">ID</span>
+</nav>
+-->
+
+<div class="row">
+  <div class="col-sm-12 col-md-4">
+    <app-product-data [code]="code"></app-product-data>
+    <app-product-values [code]="code"></app-product-values>
+  </div>
+  <div class="col-sm-12 col-md-8">
+    <app-price-variation-graph [code]="code"></app-price-variation-graph>
+    <div class="row">
+      <div class="col-md-6">
+        <app-units-sold [product]="code" [timeframe]="timeframe.getTimeObject()"></app-units-sold>
+      </div>
+      <div class="col-md-6">
+        <app-unit-in-stock [code]="code"></app-unit-in-stock>
+      </div>
+    </div>
+  </div>
+</div>
